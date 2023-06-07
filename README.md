@@ -1,2 +1,2 @@
 # binder
-Browser extension for binding you to the text you are reading
+Browser extension for deepening your reading on le web.

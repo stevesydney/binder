@@ -1,0 +1,23 @@
+{
+  "name": "binder",
+  "version": "0.0.1",
+  "description": "A deep reading tool",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevesydney/binder.git"
+  },
+  "author": "Stephen Farrugia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevesydney/binder/issues"
+  },
+  "homepage": "https://github.com/stevesydney/binder#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "serve-favicon": "^2.5.0"
+  }
+}

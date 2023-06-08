@@ -7,6 +7,7 @@ const server = http.createServer(app);
 
 app.use('/assets', express.static('assets'));
 app.use('/js', express.static('js'));
+app.use('/css', express.static('css'));
 app.use(favicon(__dirname + '/favicon.ico'));
 
 

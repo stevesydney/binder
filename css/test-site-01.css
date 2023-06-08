@@ -1,0 +1,56 @@
+body {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 20px;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 20px;
+}
+
+.binder {
+    /* outline: 1px solid gray; */
+}
+
+/*
+    paragraph masking
+    -------------------------
+    targets all children excluding invisible or non-text elements and
+    sets their background color to the foreground color
+*/
+.binder .block[data-reveal="false"],
+.binder .block[data-reveal="false"] *:not(.target) {
+    background-color: currentColor;
+}
+
+/* 
+    paragraph reveal
+    -------------------------
+    what happens when the reveal class is injected
+*/
+.binder .block[data-reveal="true"],
+.binder .block[data-reveal="true"] *:not(.target) {
+    background-color: initial;
+}
+
+/*
+    paragraph reveal trigger
+    -------------------------
+    an inserted zone for triggering the reveal of a paragraph
+*/
+.binder .block {
+    position: relative;
+}
+
+.binder .target {
+    --width: 20px;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(-10px - var(--width));
+    width: var(--width);
+    background-color: green;
+}

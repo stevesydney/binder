@@ -11,6 +11,10 @@ app.use('/css', express.static('css'));
 app.use(favicon(__dirname + '/favicon.ico'));
 
 
+app.get('/test-site-02', (req, res) => {
+    res.sendFile(__dirname + '/test-site-02.html');
+});
+
 app.get('/test-site-01', (req, res) => {
     res.sendFile(__dirname + '/test-site-01.html');
 });

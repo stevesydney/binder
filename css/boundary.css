@@ -1,16 +1,11 @@
-
-.boundary {
-    /* outline: 1px solid gray; */
-}
-
 /*
     paragraph masking
     -------------------------
     targets all children excluding invisible or non-text elements and
     sets their background color to the foreground color
 */
-.boundary .block[data-reveal="false"],
-.boundary .block[data-reveal="false"] *:not(.target) {
+[data-boundary-active] [data-block-active],
+[data-boundary-active] [data-block-active] *:not(.target) {
     background-color: currentColor;
 }
 
@@ -19,8 +14,8 @@
     -------------------------
     what happens when the reveal class is injected
 */
-.boundary .block[data-reveal="true"],
-.boundary .block[data-reveal="true"] *:not(.target) {
+[data-boundary-active][data-boundary-mouse-down="true"] [data-block-active][data-block-reveal="true"],
+[data-boundary-active][data-boundary-mouse-down="true"] [data-block-active][data-block-reveal="true"] *:not(.target) {
     background-color: initial;
 }
 
@@ -29,17 +24,28 @@
     -------------------------
     an inserted zone for triggering the reveal of a paragraph
 */
-.boundary .block {
+[data-boundary-active] [data-block-active] {
     position: relative;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
-.boundary .target {
+[data-boundary-active] .target {
     --width: 20px;
     content: "";
     position: absolute;
     top: 0;
-    bottom: 0;
+    min-height: var(--width);
     left: calc(-10px - var(--width));
     width: var(--width);
-    background-color: green;
+    background-color: orange;
+}
+
+[data-boundary-active][data-boundary-mouse-down="true"] .target[data-target-mouse-over="true"] {
+    background-color: greenyellow;
+}
+
+[data-boundary-candidate="true"] {
+    cursor: pointer;
+    outline: 4px solid pink;
 }

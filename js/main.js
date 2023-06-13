@@ -1,34 +1,88 @@
 import { create } from './modules/binder.js';
 
-function boundaryFinder() {
-    const boundaryCandidateChildEls = document.querySelectorAll('* *');
+window.mouseoverEvents = true;
+window.clickEvents = true;
 
-    boundaryCandidateChildEls.forEach(boundaryCandidateChildEl => {
+let currentMouseOver = null;
+let currentMouseOverBoundary = null;
 
-        const boundaryCandidateEl = boundaryCandidateChildEl.parentElement;
 
-        boundaryCandidateEl.addEventListener(
-            'mouseover', (e) => {
-                e.target.dataset.boundaryCandidate = true;     
-            }, true
-        );
 
-        boundaryCandidateEl.addEventListener(
-            'mouseout', (e) => {
-                e.target.dataset.boundaryCandidate = false;     
-            }, true
-        );
+const EVENT_MOUSE_MOVE = 'mousemove';
+const EVENT_MOUSE_CLICK = 'click';
 
-        boundaryCandidateEl.addEventListener(
-            'click', (e) => {
-                create(e.target);
-            }
-        )
-    });
+document.addEventListener(EVENT_MOUSE_MOVE, e => {
+    if (!window.mouseoverEvents) return;
+    if (currentMouseOver === e.target) return;
+    candidateElEvent(e.target, EVENT_MOUSE_MOVE);
+}, true);
+
+
+document.addEventListener(EVENT_MOUSE_CLICK, e => {
+    if (!window.clickEvents) return;
+    candidateElEvent(e.target, EVENT_MOUSE_CLICK);
+}, true);
+
+
+
+function getCandidateEls(parentEl, candidateEls = []) {
+
+    if (parentEl.children.length) {
+
+        if (parentEl.children.length > 1) {
+
+            candidateEls.push(parentEl);
+
+        }
+
+        for (const childEl of parentEl.children) {
+
+            getCandidateEls(childEl, candidateEls);
+
+        }
+    }
+
+    return candidateEls;
 }
 
-// possible also innerText length combined with element display prop, element siblings, and children count. 
+function candidateElEvent(eventEl, eventType) {
 
-boundaryFinder();
+    if (eventType === EVENT_MOUSE_MOVE) {
 
-//create(document.querySelector(".body"));
+        currentMouseOver = eventEl;
+
+    }
+
+    if (eventType === EVENT_MOUSE_MOVE && candidateEls.includes(eventEl)) {
+
+        currentMouseOverBoundary = eventEl;
+
+        candidateEls.forEach(candidateEl => {
+
+            candidateEl.dataset.boundaryOver = candidateEl === eventEl;
+
+        });
+
+    }
+
+    if (eventType === EVENT_MOUSE_CLICK) {
+
+        candidateEls.forEach(candidateEl => {
+
+            candidateEl.dataset.boundarySelected = candidateEl === currentMouseOverBoundary;
+
+        });
+
+    }
+}
+
+
+const candidateEls = getCandidateEls(document.body);
+console.log(candidateEls);
+
+/*
+
+create a custome event for hovering an eligible candidate Element.
+- if the element has multiple direct sibling children
+- if the element is the body or a child of
+*/

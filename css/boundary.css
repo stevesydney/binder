@@ -45,7 +45,16 @@
     background-color: greenyellow;
 }
 
-[data-boundary-candidate="true"] {
-    cursor: pointer;
+[data-boundary-enter="true"] {
     outline: 4px solid pink;
+}
+
+[data-boundary-over="true"] {
+    cursor: pointer;
+    outline: 4px solid purple;
+}
+
+[data-boundary-selected="true"] {
+    cursor: pointer;
+    outline: 4px solid green;
 }

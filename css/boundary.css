@@ -1,3 +1,8 @@
+/* :root {
+    transform: scale(20%);
+    transform-origin: top;
+} */
+
 /*
     paragraph masking
     -------------------------
@@ -45,16 +50,18 @@
     background-color: greenyellow;
 }
 
-[data-boundary-enter="true"] {
-    outline: 4px solid pink;
-}
-
 [data-boundary-over="true"] {
     cursor: pointer;
-    outline: 4px solid purple;
+    background-color: lightpink;
+    /* outline: 4px inset purple; */
 }
 
 [data-boundary-selected="true"] {
     cursor: pointer;
-    outline: 4px solid green;
+    outline: 4px inset green;
+}
+
+[data-boundary-over="true"][data-text-node="true"],
+[data-boundary-over="true"] [data-text-node="true"] {
+    background-color: lightblue;
 }

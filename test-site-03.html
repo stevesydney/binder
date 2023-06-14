@@ -1,0 +1,2181 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+
+    <title>The SEC sues Coinbase. It’s on. &#8211; Attack of the 50 Foot Blockchain</title>
+    <meta name='robots' content='max-image-preview:large' />
+    <link rel='dns-prefetch' href='//secure.gravatar.com' />
+    <link rel='dns-prefetch' href='//stats.wp.com' />
+    <link rel='dns-prefetch' href='//v0.wordpress.com' />
+    <link rel="alternate" type="application/rss+xml" title="Attack of the 50 Foot Blockchain &raquo; Feed"
+        href="https://davidgerard.co.uk/blockchain/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Attack of the 50 Foot Blockchain &raquo; Comments Feed"
+        href="https://davidgerard.co.uk/blockchain/comments/feed/" />
+    <link rel="alternate" type="application/rss+xml"
+        title="Attack of the 50 Foot Blockchain &raquo; The SEC sues Coinbase. It’s on. Comments Feed"
+        href="https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/feed/" />
+
+    <link rel='stylesheet' id='wp-dark-mode-frontend-css'
+        href='https://davidgerard.co.uk/blockchain/wp-content/plugins/wp-dark-mode/assets/css/frontend.min.css?ver=4.1.7'
+        type='text/css' media='all' />
+
+    <link rel='stylesheet' id='wp-block-library-css'
+        href='https://davidgerard.co.uk/blockchain/wp-includes/css/dist/block-library/style.min.css?ver=6.2.2'
+        type='text/css' media='all' />
+    <style id='wp-block-library-inline-css' type='text/css'>
+        .has-text-align-justify {
+            text-align: justify;
+        }
+    </style>
+    <style id='wp-block-library-theme-inline-css' type='text/css'>
+        .wp-block-audio figcaption {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+
+        .is-dark-theme .wp-block-audio figcaption {
+            color: hsla(0, 0%, 100%, .65)
+        }
+
+        .wp-block-audio {
+            margin: 0 0 1em
+        }
+
+        .wp-block-code {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: Menlo, Consolas, monaco, monospace;
+            padding: .8em 1em
+        }
+
+        .wp-block-embed figcaption {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+
+        .is-dark-theme .wp-block-embed figcaption {
+            color: hsla(0, 0%, 100%, .65)
+        }
+
+        .wp-block-embed {
+            margin: 0 0 1em
+        }
+
+        .blocks-gallery-caption {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+
+        .is-dark-theme .blocks-gallery-caption {
+            color: hsla(0, 0%, 100%, .65)
+        }
+
+        .wp-block-image figcaption {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+
+        .is-dark-theme .wp-block-image figcaption {
+            color: hsla(0, 0%, 100%, .65)
+        }
+
+        .wp-block-image {
+            margin: 0 0 1em
+        }
+
+        .wp-block-pullquote {
+            border-bottom: 4px solid;
+            border-top: 4px solid;
+            color: currentColor;
+            margin-bottom: 1.75em
+        }
+
+        .wp-block-pullquote cite,
+        .wp-block-pullquote footer,
+        .wp-block-pullquote__citation {
+            color: currentColor;
+            font-size: .8125em;
+            font-style: normal;
+            text-transform: uppercase
+        }
+
+        .wp-block-quote {
+            border-left: .25em solid;
+            margin: 0 0 1.75em;
+            padding-left: 1em
+        }
+
+        .wp-block-quote cite,
+        .wp-block-quote footer {
+            color: currentColor;
+            font-size: .8125em;
+            font-style: normal;
+            position: relative
+        }
+
+        .wp-block-quote.has-text-align-right {
+            border-left: none;
+            border-right: .25em solid;
+            padding-left: 0;
+            padding-right: 1em
+        }
+
+        .wp-block-quote.has-text-align-center {
+            border: none;
+            padding-left: 0
+        }
+
+        .wp-block-quote.is-large,
+        .wp-block-quote.is-style-large,
+        .wp-block-quote.is-style-plain {
+            border: none
+        }
+
+        .wp-block-search .wp-block-search__label {
+            font-weight: 700
+        }
+
+        .wp-block-search__button {
+            border: 1px solid #ccc;
+            padding: .375em .625em
+        }
+
+        :where(.wp-block-group.has-background) {
+            padding: 1.25em 2.375em
+        }
+
+        .wp-block-separator.has-css-opacity {
+            opacity: .4
+        }
+
+        .wp-block-separator {
+            border: none;
+            border-bottom: 2px solid;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .wp-block-separator.has-alpha-channel-opacity {
+            opacity: 1
+        }
+
+        .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+            width: 100px
+        }
+
+        .wp-block-separator.has-background:not(.is-style-dots) {
+            border-bottom: none;
+            height: 1px
+        }
+
+        .wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+            height: 2px
+        }
+
+        .wp-block-table {
+            margin: 0 0 1em
+        }
+
+        .wp-block-table td,
+        .wp-block-table th {
+            word-break: normal
+        }
+
+        .wp-block-table figcaption {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+
+        .is-dark-theme .wp-block-table figcaption {
+            color: hsla(0, 0%, 100%, .65)
+        }
+
+        .wp-block-video figcaption {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+
+        .is-dark-theme .wp-block-video figcaption {
+            color: hsla(0, 0%, 100%, .65)
+        }
+
+        .wp-block-video {
+            margin: 0 0 1em
+        }
+
+        .wp-block-template-part.has-background {
+            margin-bottom: 0;
+            margin-top: 0;
+            padding: 1.25em 2.375em
+        }
+    </style>
+    <link rel='stylesheet' id='jetpack-videopress-video-block-view-css'
+        href='https://davidgerard.co.uk/blockchain/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-videopress/build/block-editor/blocks/video/view.css?minify=false&#038;ver=34ae973733627b74a14e'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='mediaelement-css'
+        href='https://davidgerard.co.uk/blockchain/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='wp-mediaelement-css'
+        href='https://davidgerard.co.uk/blockchain/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.2.2'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='classic-theme-styles-css'
+        href='https://davidgerard.co.uk/blockchain/wp-includes/css/classic-themes.min.css?ver=6.2.2' type='text/css'
+        media='all' />
+    <style id='global-styles-inline-css' type='text/css'>
+        body {
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
+            --wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
+            --wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
+            --wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
+            --wp--preset--duotone--midnight: url('#wp-duotone-midnight');
+            --wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
+            --wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
+            --wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+            --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+        }
+
+        :where(.is-layout-flex) {
+            gap: 0.5em;
+        }
+
+        body .is-layout-flow>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        body .is-layout-flow>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        body .is-layout-flow>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        body .is-layout-constrained>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        body .is-layout-constrained>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        body .is-layout-constrained>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        body .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+            max-width: var(--wp--style--global--content-size);
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        body .is-layout-constrained>.alignwide {
+            max-width: var(--wp--style--global--wide-size);
+        }
+
+        body .is-layout-flex {
+            display: flex;
+        }
+
+        body .is-layout-flex {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        body .is-layout-flex>* {
+            margin: 0;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+
+        .wp-block-navigation a:where(:not(.wp-element-button)) {
+            color: inherit;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        .wp-block-pullquote {
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+    </style>
+    <link rel='stylesheet' id='bodhi-svgs-attachment-css'
+        href='https://davidgerard.co.uk/blockchain/wp-content/plugins/svg-support/css/svgs-attachment.css?ver=6.2.2'
+        type='text/css' media='all' />
+
+    <link rel='stylesheet' id='hitmag-style-css'
+        href='https://davidgerard.co.uk/blockchain/wp-content/themes/hitmag/style.css?ver=6.2.2' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='social-logos-css'
+        href='https://davidgerard.co.uk/blockchain/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css?ver=12.2'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='jetpack_css-css'
+        href='https://davidgerard.co.uk/blockchain/wp-content/plugins/jetpack/css/jetpack.css?ver=12.2' type='text/css'
+        media='all' />
+    <script type='text/javascript'
+        src='https://davidgerard.co.uk/blockchain/wp-content/plugins/wp-dark-mode/assets/js/dark-mode.min.js?ver=4.1.7'
+        id='wp-dark-mode-js-js'></script>
+    <script type='text/javascript' id='wp-dark-mode-frontend-js-extra'>
+        /* <![CDATA[ */
+        var wpDarkMode = { "config": { "brightness": 100, "contrast": 90, "sepia": 10 }, "enable_preset": "", "customize_colors": "", "colors": { "bg": "#000", "text": "#dfdedb", "link": "#e58c17" }, "enable_frontend": "1", "enable_backend": "", "enable_os_mode": "1", "excludes": "rs-fullwidth-wrap, .mejs-container, ._channels-container", "includes": "", "is_excluded": "", "remember_darkmode": "", "default_mode": "", "keyboard_shortcut": "1", "url_parameter": "", "images": { "light_images": [""], "dark_images": [""], "low_brightness": "on", "grayscale": "off" }, "videos": "", "is_pro_active": "", "is_ultimate_active": "", "pro_version": "0", "is_elementor_editor": "", "is_block_editor": "", "frontend_mode": "", "pluginUrl": "https:\/\/davidgerard.co.uk\/blockchain\/wp-content\/plugins\/wp-dark-mode\/" };
+/* ]]> */
+    </script>
+    <script type='text/javascript'
+        src='https://davidgerard.co.uk/blockchain/wp-content/plugins/wp-dark-mode/assets/js/frontend.min.js?ver=4.1.7'
+        id='wp-dark-mode-frontend-js'></script>
+    <script type='text/javascript'
+        src='https://davidgerard.co.uk/blockchain/wp-includes/js/jquery/jquery.min.js?ver=3.6.4'
+        id='jquery-core-js'></script>
+    <script type='text/javascript'
+        src='https://davidgerard.co.uk/blockchain/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0'
+        id='jquery-migrate-js'></script>
+    <!--[if lt IE 9]>
+<script type='text/javascript' src='https://davidgerard.co.uk/blockchain/wp-content/themes/hitmag/js/html5shiv.min.js?ver=6.2.2' id='html5shiv-js'></script>
+<![endif]-->
+    <link rel="https://api.w.org/" href="https://davidgerard.co.uk/blockchain/wp-json/" />
+    <link rel="alternate" type="application/json"
+        href="https://davidgerard.co.uk/blockchain/wp-json/wp/v2/posts/25510" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD"
+        href="https://davidgerard.co.uk/blockchain/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml"
+        href="https://davidgerard.co.uk/blockchain/wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 6.2.2" />
+    <link rel="canonical" href="https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/" />
+    <link rel='shortlink' href='https://wp.me/p8Eyny-6Ds' />
+    <link rel="alternate" type="application/json+oembed"
+        href="https://davidgerard.co.uk/blockchain/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdavidgerard.co.uk%2Fblockchain%2F2023%2F06%2F07%2Fthe-sec-sues-coinbase-its-on%2F" />
+    <link rel="alternate" type="text/xml+oembed"
+        href="https://davidgerard.co.uk/blockchain/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdavidgerard.co.uk%2Fblockchain%2F2023%2F06%2F07%2Fthe-sec-sues-coinbase-its-on%2F&#038;format=xml" />
+    <style>
+        img#wpstats {
+            display: none
+        }
+    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="/blockchain/wp-content/uploads/fbrfg/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blockchain/wp-content/uploads/fbrfg/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/blockchain/wp-content/uploads/fbrfg/favicon-16x16.png">
+    <link rel="manifest" href="/blockchain/wp-content/uploads/fbrfg/site.webmanifest">
+    <link rel="mask-icon" href="/blockchain/wp-content/uploads/fbrfg/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/blockchain/wp-content/uploads/fbrfg/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/blockchain/wp-content/uploads/fbrfg/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <style type="text/css">
+        button,
+        input[type="button"],
+        input[type="reset"],
+        input[type="submit"] {
+            background: #42318c;
+        }
+
+        .th-readmore {
+            background: #42318c;
+        }
+
+        a:hover {
+            color: #42318c;
+        }
+
+        .main-navigation a:hover {
+            background-color: #42318c;
+        }
+
+        .main-navigation .current_page_item>a,
+        .main-navigation .current-menu-item>a,
+        .main-navigation .current_page_ancestor>a,
+        .main-navigation .current-menu-ancestor>a {
+            background-color: #42318c;
+        }
+
+        #main-nav-button:hover {
+            background-color: #42318c;
+        }
+
+        .post-navigation .post-title:hover {
+            color: #42318c;
+        }
+
+        .top-navigation a:hover {
+            color: #42318c;
+        }
+
+        .top-navigation ul ul a:hover {
+            background: #42318c;
+        }
+
+        #top-nav-button:hover {
+            color: #42318c;
+        }
+
+        .responsive-mainnav li a:hover,
+        .responsive-topnav li a:hover {
+            background: #42318c;
+        }
+
+        #hm-search-form .search-form .search-submit {
+            background-color: #42318c;
+        }
+
+        .nav-links .current {
+            background: #42318c;
+        }
+
+        .is-style-hitmag-widget-title,
+        .elementor-widget-container h5,
+        .widgettitle,
+        .widget-title {
+            border-bottom: 2px solid #42318c;
+        }
+
+        .footer-widget-title {
+            border-bottom: 2px solid #42318c;
+        }
+
+        .widget-area a:hover {
+            color: #42318c;
+        }
+
+        .footer-widget-area .widget a:hover {
+            color: #42318c;
+        }
+
+        .site-info a:hover {
+            color: #42318c;
+        }
+
+        .wp-block-search .wp-block-search__button,
+        .search-form .search-submit {
+            background: #42318c;
+        }
+
+        .hmb-entry-title a:hover {
+            color: #42318c;
+        }
+
+        .hmb-entry-meta a:hover,
+        .hms-meta a:hover {
+            color: #42318c;
+        }
+
+        .hms-title a:hover {
+            color: #42318c;
+        }
+
+        .hmw-grid-post .post-title a:hover {
+            color: #42318c;
+        }
+
+        .footer-widget-area .hmw-grid-post .post-title a:hover,
+        .footer-widget-area .hmb-entry-title a:hover,
+        .footer-widget-area .hms-title a:hover {
+            color: #42318c;
+        }
+
+        .hm-tabs-wdt .ui-state-active {
+            border-bottom: 2px solid #42318c;
+        }
+
+        a.hm-viewall {
+            background: #42318c;
+        }
+
+        #hitmag-tags a,
+        .widget_tag_cloud .tagcloud a {
+            background: #42318c;
+        }
+
+        .site-title a {
+            color: #42318c;
+        }
+
+        .hitmag-post .entry-title a:hover {
+            color: #42318c;
+        }
+
+        .hitmag-post .entry-meta a:hover {
+            color: #42318c;
+        }
+
+        .cat-links a {
+            color: #42318c;
+        }
+
+        .hitmag-single .entry-meta a:hover {
+            color: #42318c;
+        }
+
+        .hitmag-single .author a:hover {
+            color: #42318c;
+        }
+
+        .hm-author-content .author-posts-link {
+            color: #42318c;
+        }
+
+        .hm-tags-links a:hover {
+            background: #42318c;
+        }
+
+        .hm-tagged {
+            background: #42318c;
+        }
+
+        .hm-edit-link a.post-edit-link {
+            background: #42318c;
+        }
+
+        .arc-page-title {
+            border-bottom: 2px solid #42318c;
+        }
+
+        .srch-page-title {
+            border-bottom: 2px solid #42318c;
+        }
+
+        .hm-slider-details .cat-links {
+            background: #42318c;
+        }
+
+        .hm-rel-post .post-title a:hover {
+            color: #42318c;
+        }
+
+        .comment-author a {
+            color: #42318c;
+        }
+
+        .comment-metadata a:hover,
+        .comment-metadata a:focus,
+        .pingback .comment-edit-link:hover,
+        .pingback .comment-edit-link:focus {
+            color: #42318c;
+        }
+
+        .comment-reply-link:hover,
+        .comment-reply-link:focus {
+            background: #42318c;
+        }
+
+        .required {
+            color: #42318c;
+        }
+
+        blockquote {
+            border-left: 3px solid #42318c;
+        }
+
+        .comment-reply-title small a:before {
+            color: #42318c;
+        }
+
+        .woocommerce ul.products li.product h3:hover,
+        .woocommerce-widget-area ul li a:hover,
+        .woocommerce-loop-product__title:hover {
+            color: #42318c;
+        }
+
+        .woocommerce-product-search input[type="submit"],
+        .woocommerce #respond input#submit,
+        .woocommerce a.button,
+        .woocommerce button.button,
+        .woocommerce input.button,
+        .woocommerce nav.woocommerce-pagination ul li a:focus,
+        .woocommerce nav.woocommerce-pagination ul li a:hover,
+        .woocommerce nav.woocommerce-pagination ul li span.current,
+        .woocommerce span.onsale,
+        .woocommerce-widget-area .widget-title,
+        .woocommerce #respond input#submit.alt,
+        .woocommerce a.button.alt,
+        .woocommerce button.button.alt,
+        .woocommerce input.button.alt {
+            background: #42318c;
+        }
+
+        .wp-block-quote,
+        .wp-block-quote:not(.is-large):not(.is-style-large) {
+            border-left: 3px solid #42318c;
+        }
+    </style>
+    <style type="text/css">
+        .site-title a,
+        .site-description {
+            color: #42318c;
+        }
+    </style>
+
+    <!-- Jetpack Open Graph Tags -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="The SEC sues Coinbase. It’s on." />
+    <meta property="og:url" content="https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/" />
+    <meta property="og:description" content="The beginning of the end for crypto in the US." />
+    <meta property="article:published_time" content="2023-06-07T23:26:39+00:00" />
+    <meta property="article:modified_time" content="2023-06-08T10:31:00+00:00" />
+    <meta property="og:site_name" content="Attack of the 50 Foot Blockchain" />
+    <meta property="og:image"
+        content="https://davidgerard.co.uk/blockchain/wp-content/uploads/2023/06/armstrong-grewal.jpg" />
+    <meta property="og:image:width" content="680" />
+    <meta property="og:image:height" content="420" />
+    <meta property="og:image:alt" content="" />
+    <meta property="og:locale" content="en_GB" />
+    <meta name="twitter:text:title" content="The SEC sues Coinbase. It’s on." />
+    <meta name="twitter:image"
+        content="https://davidgerard.co.uk/blockchain/wp-content/uploads/2023/06/armstrong-grewal.jpg?w=640" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- End Jetpack Open Graph Tags -->
+    <link rel="icon"
+        href="https://davidgerard.co.uk/blockchain/wp-content/uploads/2020/10/cropped-scared-business-guy-purple-1-32x32.png"
+        sizes="32x32" />
+    <link rel="icon"
+        href="https://davidgerard.co.uk/blockchain/wp-content/uploads/2020/10/cropped-scared-business-guy-purple-1-192x192.png"
+        sizes="192x192" />
+    <link rel="apple-touch-icon"
+        href="https://davidgerard.co.uk/blockchain/wp-content/uploads/2020/10/cropped-scared-business-guy-purple-1-180x180.png" />
+    <meta name="msapplication-TileImage"
+        content="https://davidgerard.co.uk/blockchain/wp-content/uploads/2020/10/cropped-scared-business-guy-purple-1-270x270.png" />
+
+    <link href="css/boundary.css" rel="stylesheet">
+</head>
+
+<body
+    class="post-template-default single single-post postid-25510 single-format-standard wp-custom-logo wp-embed-responsive hitmag-full-width th-right-sidebar">
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg>
+
+    <div id="page" class="site hitmag-wrapper">
+        <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+
+        <header id="masthead" class="site-header" role="banner">
+
+
+
+            <div class="header-main-area ">
+                <div class="hm-container">
+                    <div class="site-branding">
+                        <div class="site-branding-content">
+                            <div class="hm-logo">
+                                <a href="https://davidgerard.co.uk/blockchain/" class="custom-logo-link" rel="home"><img
+                                        width="72" height="72"
+                                        src="https://davidgerard.co.uk/blockchain/wp-content/uploads/2020/10/scared-business-guy-purple-72.png"
+                                        class="custom-logo" alt="Attack of the 50 Foot Blockchain"
+                                        decoding="async" /></a>
+                            </div><!-- .hm-logo -->
+
+                            <div class="hm-site-title">
+                                <p class="site-title"><a href="https://davidgerard.co.uk/blockchain/" rel="home">Attack
+                                        of the 50 Foot Blockchain</a></p>
+                                <p class="site-description">Blockchain and cryptocurrency news and analysis by David
+                                    Gerard</p>
+                            </div><!-- .hm-site-title -->
+                        </div><!-- .site-branding-content -->
+                    </div><!-- .site-branding -->
+
+
+                    <div class="hm-header-sidebar">
+                        <aside id="text-16" class="widget widget_text">
+                            <div class="textwidget"></div>
+                        </aside>
+                    </div>
+                </div><!-- .hm-container -->
+            </div><!-- .header-main-area -->
+
+        </header><!-- #masthead -->
+
+
+        <div id="content" class="site-content">
+            <div class="hm-container">
+
+                <div id="primary" class="content-area">
+                    <main id="main" class="site-main" role="main">
+
+
+                        <article id="post-25510"
+                            class="hitmag-single post-25510 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorised tag-alabama tag-amp tag-andreessen-horowitz tag-axie-infinity tag-brian-armstrong tag-california tag-cardano tag-cheryl-ann-krause tag-chiliz tag-coinbase tag-crypto-rating-council tag-dapper-labs tag-dash tag-ddx tag-filecoin tag-icp tag-illinois tag-katie-haun tag-kentucky tag-lcx tag-marc-andreessen tag-maryland tag-matic tag-near tag-new-jersey tag-nexo tag-omg tag-paul-grewal tag-powerledger tag-rally tag-sandbox-blockchain-game tag-sec tag-solana tag-south-carolina tag-vermont tag-voyager-digital tag-washington tag-wisconsin tag-xyo">
+
+
+                            <header class="entry-header">
+                                <h1 class="entry-title">The SEC sues Coinbase. It’s on.</h1>
+                                <div class="entry-meta">
+                                    <span class="posted-on"><a
+                                            href="https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/"
+                                            rel="bookmark"><time class="entry-date published"
+                                                datetime="2023-06-07T23:26:39+00:00">7th June 2023</time><time
+                                                class="updated" datetime="2023-06-08T10:31:00+00:00">8th June
+                                                2023</time></a></span><span class="meta-sep"> - </span><span
+                                        class="byline"> by <span class="author vcard"><a class="url fn n"
+                                                href="https://davidgerard.co.uk/blockchain/author/david-gerard/">David
+                                                Gerard</a></span></span><span class="meta-sep"> - </span><span
+                                        class="comments-link"><a
+                                            href="https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/#comments">7
+                                            Comments.</a></span>
+                                </div><!-- .entry-meta -->
+
+                            </header><!-- .entry-header -->
+
+
+
+                            <div class="entry-content">
+                                <p class="byline-me"><i>By <b>Amy Castor</b> and <b>David Gerard</b></i></p>
+                                <ul>
+                                    <li>If you like our work, become a patron! Here’s <a
+                                            href="https://www.patreon.com/amycastor">Amy’s</a> Patreon, and here’s <a
+                                            href="https://www.patreon.com/davidgerard/">David’s</a>. Sign up today!</li>
+                                </ul>
+                                <blockquote>
+                                    <p>“A decent rule of thumb is that all cryptocurrency exchanges are doing crimes,
+                                        and if you’re lucky your exchange is doing only process crimes.” — <a
+                                            href="https://www.bloomberg.com/opinion/articles/2023-03-27/the-cftc-comes-for-binance">Matt
+                                            Levine</a></p>
+                                </blockquote>
+                                <p>&nbsp;</p>
+                                <p><a href="https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/armstrong-grewal/"
+                                        rel="attachment wp-att-25511"><img decoding="async"
+                                            class="aligncenter wp-image-25511"
+                                            src="https://davidgerard.co.uk/blockchain/wp-content/uploads/2023/06/armstrong-grewal.jpg"
+                                            alt="" width="510" height="315"
+                                            srcset="https://davidgerard.co.uk/blockchain/wp-content/uploads/2023/06/armstrong-grewal.jpg 680w, https://davidgerard.co.uk/blockchain/wp-content/uploads/2023/06/armstrong-grewal-300x185.jpg 300w, https://davidgerard.co.uk/blockchain/wp-content/uploads/2023/06/armstrong-grewal-348x215.jpg 348w"
+                                            sizes="(max-width: 510px) 100vw, 510px" /></a></p>
+                                <p>&nbsp;</p>
+                                <p>Boom! After a year of warning them repeatedly, the SEC has finally taken action
+                                    against Coinbase, the biggest US crypto exchange, for operating as an illegal
+                                    securities exchange and selling unregistered securities. [<a
+                                        href="https://www.sec.gov/news/press-release/2023-102"><i>Press
+                                            release</i></a><i>; </i><a
+                                        href="https://storage.courtlistener.com/recap/gov.uscourts.nysd.599908/gov.uscourts.nysd.599908.1.0.pdf"><i>Complaint</i></a><i>,
+                                        PDF</i>]</p>
+                                <p>In a 101-page complaint, filed in a Manhattan court on Tuesday, just one day after
+                                    the SEC filed a suit against the Binance exchange — which we’ll be covering next
+                                    time — the SEC says that Coinbase has operated illegally “since at least 2019” by:
+                                </p>
+                                <ul>
+                                    <li aria-level="1">dealing in unregistered securities (at least 13 crypto tokens);
+                                    </li>
+                                    <li aria-level="1">running an exchange, a broker-dealer, and a clearinghouse as part
+                                        of the same operation and without registering any of them. (See also <a
+                                            href="https://davidgerard.co.uk/blockchain/2023/04/23/crypto-collapse-reggie-fowler-sentencing-delayed-sec-charges-bittrex-coinbase-looks-to-leave-the-us-scaramucci-and-ftx-bitfinex-ripple/">the
+                                            Bittrex complaint</a>);</li>
+                                    <li aria-level="1">offering staking services, which are also securities, without
+                                        registering.</li>
+                                </ul>
+                                <p>SEC wants Coinbase to be enjoined from doing any of this again, pay disgorgement and
+                                    interest, pay a civil money penalty, and pay “equitable relief” to investors.</p>
+                                <p>There are no surprises in the charges — and unlike the Binance lawsuit, no claims of
+                                    fraud. Coinbase CEO Brian Armstrong was also not named in the complaint, unlike the
+                                    Binance complaint where founder CZ was named.</p>
+                                <p>The complaint outlines how Coinbase executives understood the laws governing the
+                                    market and sale of securities in the US, even as they failed to abide by those laws.
+                                </p>
+                                <p>None of this should come as a surprise. The SEC <a
+                                        href="https://amycastor.com/2023/03/24/do-kwon-arrested-white-house-hates-crypto-coinbase-wells-notice-sec-charges-justin-sun-signature-sold-ftx-bahamas-party-fund-returns/">sent
+                                        Coinbase a Wells notice</a> in March, giving them a heads-up that an enforcement
+                                    action was coming down the pipes.</p>
+                                <h3>In security</h3>
+                                <p>The SEC warned crypto exchanges about offering illegal securities in its <a
+                                        href="https://davidgerard.co.uk/blockchain/2018/11/18/the-secs-templated-admin-orders-against-icos-what-happens-next/">DAO
+                                        report in July 2017</a>.</p>
+                                <p>Even a year before the DAO Report, Coinbase demonstrated it understood the <a
+                                        href="https://en.wikipedia.org/wiki/SEC_v._W._J._Howey_Co.">Howey test</a> when
+                                    it began assessing tokens before listing them:</p>
+                                <blockquote>
+                                    <p>In or around December 2016, Coinbase released on its website a document entitled,
+                                        “A Securities Law Framework for Blockchain Tokens.” This document included a
+                                        section on “How to determine if a token is a security,” and explained: “The US
+                                        Supreme Court case of SEC v Howey established the test for whether an
+                                        arrangement involves an investment contract. An investment contract is a type of
+                                        security.” This “Framework” acknowledged that “[f]or many blockchain tokens, the
+                                        first two elements of the Howey test” — i.e., investment of money and common
+                                        enterprise — “are likely to be met.”</p>
+                                </blockquote>
+                                <p>Starting in 2019, Coinbase relied on its “Crypto Rating Council” (CRC) to determine
+                                    if an asset was a security.</p>
+                                <p>It turns out Coinbase offered some tokens even <i>after</i> their own internal report
+                                    said they were very likely securities:</p>
+                                <blockquote>
+                                    <p>Meanwhile, between late 2019 and the end of 2020, Coinbase more than doubled the
+                                        number of crypto assets available for trading on the Coinbase Platform, and it
+                                        more than doubled that number again in 2021. During this period, Coinbase made
+                                        available on the Coinbase Platform crypto assets with high “risk” scores under
+                                        the CRC framework it had adopted. In other words, to realize exponential growth
+                                        of the Coinbase Platform and boost its own trading profits, Coinbase made the
+                                        strategic business decision to add crypto assets to the Coinbase Platform even
+                                        where it recognized the crypto assets had the characteristics of securities.</p>
+                                </blockquote>
+                                <p>Coinbase also contacted some token promoters to suggest they use less security-like
+                                    phrasing in their documents — as if the SEC cares what you call your thing, and not
+                                    how it works.</p>
+                                <p>The complaint names 13 tokens on Coinbase as securities — Solana (SOL), Cardano
+                                    (ADA), MATIC, Filecoin (FIL), Sandbox (SAND), Axie Infinity (AXS), Chiliz (CHZ),
+                                    Dapper Labs FLOW, ICP, NEAR, Voyager Token (VGX), DASH, and Nexo’s in-house token
+                                    NEXO.</p>
+                                <p>(Oh no, not Axie infinity! That was our <a
+                                        href="https://amycastor.com/2022/05/23/kara-swisher-promotes-cryptos-for-your-retirement-compares-it-to-early-internet/">retirement!</a>)
+                                </p>
+                                <p>NEXO was not actually on the Coinbase Platform, only in the Coinbase Wallet, which
+                                    trades via DEXes — but the SEC is still going after Coinbase as offering NEXO for
+                                    trading. The first DEX the SEC busted was <a
+                                        href="https://davidgerard.co.uk/blockchain/2018/11/08/news-sec-busts-etherdelta-swift-not-using-ripplenet-another-galts-gulch-scam-craig-wright-claims-to-be-satoshi-again/">EtherDelta
+                                        in November 2018</a>, so it absolutely considers activity on DEXes within its
+                                    ambit.</p>
+                                <p>The complaint goes through each of the 13 tokens and spells out precisely why each
+                                    qualifies as a security according to the Howey test.</p>
+                                <p>The SEC notes that for <a
+                                        href="https://en.wikipedia.org/wiki/Securities_Exchange_Act_of_1934">Exchange
+                                        Act</a> purposes, it only needs to show that <i>one</i> of these tokens is a
+                                    security. But it’ll show its working on all thirteen, just to bludgeon the point
+                                    home.</p>
+                                <p>In three cases — SOL, FIL, and FLOW — the tokens literally <i>filed with the SEC</i>
+                                    as offerings of securities, but ones exempt from registration. So Coinbase may have
+                                    some trouble now claiming those tokens aren’t any sort of security.</p>
+                                <p>The SEC notes that it outlined why AMP, DerivaDAO (DDX), LCX, Omegle (OMG),
+                                    Powerledger (POWR), Rally (RLY), and XYO were securities in previous actions. All of
+                                    these tokens are or were listed on Coinbase.</p>
+                                <p>Because Coinbase listed those tokens on its platform, which the SEC says are
+                                    securities, Coinbase was required to register as an exchange, brokerage, and
+                                    clearing agency — all businesses it was clearly operating — but just didn’t.</p>
+                                <h3>A stake through your heart</h3>
+                                <p>Staking as a service is incredibly obviously an investment contract — a security
+                                    offering. In 2019, <a
+                                        href="https://davidgerard.co.uk/blockchain/2022/08/20/proof-of-stake-is-better-than-proof-of-work-but-ethereums-merge-wont-fix-any-other-problem-with-cryptocurrency/">the
+                                        SEC started looking into this.</a></p>
+                                <p>The SEC worked with 10 state securities regulators who have said that Coinbase’s
+                                    staking product is an unregistered security.</p>
+                                <p>An unsettled SEC case can take months to go through — but several state regulators
+                                    have issued immediate cease and desist orders. [<i>Alabama </i><a
+                                        href="https://asc.alabama.gov/News/2023%20News/6-6-2023_Coinbase.pdf"><i>press
+                                            release</i></a><i>, PDF;</i> <a
+                                        href="https://dfpi.ca.gov/2023/06/06/dfpi-issues-action-against-coinbase-citing-staking-rewards-program-violates-securities-law/"><i>California
+                                            press release</i></a><i>, </i><a
+                                        href="https://dfpi.ca.gov/wp-content/uploads/sites/337/2023/06/Admin.-Action-Coinbase-Global-Inc.-Notice-of-Intent.pdf"><i>order</i></a><i>,
+                                        PDF</i>;<i> Illinois </i><a
+                                        href="https://www.illinois.gov/news/press-release.26552.html"><i>press
+                                            release</i></a><i>, </i><a
+                                        href="https://www.ilsos.gov/news/2023/june/230606d1-withattach.pdf"><i>notice of
+                                            hearing</i></a><i>, </i><a
+                                        href="https://web.archive.org/web/20230606204402/https://www.ilsos.gov/news/2023/june/230606d1-withattach.pdf"><i>archive</i></a><i>,
+                                        PDF; Kentucky </i><a
+                                        href="https://kfi.ky.gov/Documents/Coinbase%20Global,%20INC.%20and%20Coinbase,%20INC.%202023-AH-0011.pdf"><i>order</i></a><i>,
+                                    </i><a
+                                        href="https://web.archive.org/web/20230607212609/https://kfi.ky.gov/Documents/Coinbase%20Global%2C%20INC.%20and%20Coinbase%2C%20INC.%202023-AH-0011.pdf"><i>archive</i></a><i>,
+                                        PDF; Maryland <a
+                                            href="https://www.marylandattorneygeneral.gov/Securities%20Actions/2023/Summary_Order_Coinbase_060623.pdf">order</i></a><i>,
+                                        PDF; New Jersey </i><a
+                                        href="https://www.njoag.gov/new-jersey-bureau-of-securities-brings-action-against-coinbase-citing-crypto-staking-offerings-that-violate-the-securities-law/"><i>press
+                                            release</i></a><i>, </i><a
+                                        href="https://www.nj.gov/oag/newsreleases23/2023-0606_Coinbase-Penalty-and-C-D.pdf"><i>order</i></a><i>,
+                                        PDF; South Carolina </i><a
+                                        href="https://www.scag.gov/about-the-office/news/attorney-general-alan-wilson-brings-action-against-coinbase-for-violating-south-carolina-securities-laws/"><i>press
+                                            release</i></a><i>, </i><a
+                                        href="https://www.scag.gov/media/kjhdo3rb/2023-06-06-cease-and-desist-order-coinbase-inc-et-al-scag-matter-20225292-03305438xd2c78.pdf"><i>order</i></a><i>,
+                                        PDF; Vermont </i><a
+                                        href="https://dfr.vermont.gov/sites/finreg/files/regbul/dfr-order-docket-23-003-s-Coinbase-Global.pdf"><i>show
+                                            cause order</i></a><i>, PDF; Washington </i><a
+                                        href="https://dfi.wa.gov/news/press/coinbase"><i>press release</i></a><i>;
+                                        Wisconsin </i><a
+                                        href="https://dfi.wi.gov/Documents/Securities/RegistrationOfProfessionals/EnforcementAdministrativeOrders/2023/20230606CoinbaseCoinbaseGlobal.pdf"><i>summary
+                                            order</i></a><i>, PDF; </i><a
+                                        href="https://www.bloomberg.com/news/articles/2023-06-06/coinbase-crackdown-widens-as-us-states-push-to-halt-staking-product"><i>Bloomberg</i></a>]
+                                </p>
+                                <p>Alabama, Illinois, Vermont, and Washington are giving Coinbase a month to respond.
+                                    California, Kentucky, Maryland, New Jersey, South Carolina, and Wisconsin have told
+                                    Coinbase to cease and desist offering staking in their states immediately.</p>
+                                <p>Most states are also fining Coinbase per violation — that is, per investor.</p>
+                                <h3>But the SEC allowed Coinbase to go public!</h3>
+                                <p>Crypto fans have been crying how unfair it is that the SEC is filing an action
+                                    against Coinbase when they approved the S-1 for Coinbase’s public listing! The legal
+                                    theory that Coinbase and its chief legal officer Paul Grewal are pushing is that
+                                    approving the listing meant the SEC approved of Coinbase’s business.</p>
+                                <p>This theory is obviously inane. That Coinbase seems to be leaning hard on this theory
+                                    looks like desperation — that this is really the best they’ve got.</p>
+                                <p>The SEC had warned Coinbase that approval of the registration statement did not mean
+                                    the agency had approved the underlying business activity. The SEC says in the
+                                    complaint:</p>
+                                <blockquote>
+                                    <p>Declaring effective a Form S-1 registration statement does not constitute an SEC
+                                        or staff opinion on, or endorsement of, the legality of an issuer’s underlying
+                                        business.</p>
+                                </blockquote>
+                                <p>The SEC also points out that since going public in 2021, Coinbase has acknowledged in
+                                    its S-1 and in subsequent filings the risk that cryptos it lists could be deemed
+                                    securities.</p>
+                                <p>According to the SEC:</p>
+                                <blockquote>
+                                    <p>Coinbase has elevated its interest in increasing its profits over investors’
+                                        interests, and over compliance with the law and the regulatory framework that
+                                        governs the securities markets and was created to protect investors and the U.S.
+                                        capital markets.</p>
+                                </blockquote>
+                                <p>Coinbase remains extremely good friends with its early investor Andreessen Horowitz
+                                    and still has two directors (Marc Andreessen and Katie Haun) from a16z on its board.
+                                    Coinbase was also the exchange of choice for a16z Crypto to cash out their <a
+                                        href="https://davidgerard.co.uk/blockchain/2022/04/11/web3-a-vc-funded-gig-economy-of-securities-violations/">Web3
+                                        token dumps on retail investors.</a> As well as Coinbase&#8217;s own venture
+                                    arm’s token dumps.</p>
+                                <h3>The searing light of regulatory clarity</h3>
+                                <p>This is the beginning of the end for crypto in the US.</p>
+                                <p>Every crypto exchange in the US has been operating illegally, and it was only a
+                                    matter of time before the SEC would start shutting them down. They knew it was
+                                    coming. <a
+                                        href="https://davidgerard.co.uk/blockchain/2023/04/23/crypto-collapse-reggie-fowler-sentencing-delayed-sec-charges-bittrex-coinbase-looks-to-leave-the-us-scaramucci-and-ftx-bitfinex-ripple/">The
+                                        SEC sued Bittrex in April</a>.</p>
+                                <p>At best, Coinbase will try to reestablish itself overseas — but the writing is on the
+                                    wall. Coinbase is the US dollar cashier’s desk for <a
+                                        href="https://davidgerard.co.uk/blockchain/2020/09/06/the-crypto-market-as-a-single-unified-scam/">the
+                                        broader crypto casino.</a> Volumes are through the floor &mdash; Coinbase <a
+                                        href="https://amycastor.com/2023/02/26/crypto-collapse-new-sam-bankman-fried-charges-new-york-targets-coinex-coinbase-losses-voyager-celsius/">can’t
+                                        make the money it needs to make</a> from trading on bitcoin and ether alone.</p>
+                                <p>On news of the SEC complaint, the COIN stock price fell 12% and Coinbase’s bonds
+                                    tumbled into distressed territory. [<a
+                                        href="https://www.wsj.com/livecoverage/stock-market-today-dow-jones-06-06-2023/card/coinbase-bonds-tumble-into-distressed-territory-IPprw7Mt6US30KoL9X9Z?mod=article_inline"><i>WSJ</i></a><i>,
+                                        paywalled; </i><a
+                                        href="https://news.bloomberglaw.com/bankruptcy-law/coinbase-bonds-plunge-in-hy-secondary-trading-after-sec-suit"><i>Bloomberg
+                                            Law</i></a>]</p>
+                                <p>Coinbase is relatively well-behaved for a crypto exchange — though it ran an entire
+                                    <a
+                                        href="https://davidgerard.co.uk/blockchain/2021/03/29/news-vanishing-nfts-free-keene-not-so-free-coinbase-wash-trading-litecoin/">fake
+                                        market in Litecoin</a> through 2018, for which the CFTC duly busted and fined
+                                    it. But hey, it’s better than Binance, probably.
+                                </p>
+                                <p>Grewal tells Bloomberg he’ll take the SEC fight to the Supreme Court if he has to! Of
+                                    course, he would say that. As with the SEC suit against Ripple, this suit is
+                                    existential for Coinbase. [<a
+                                        href="https://www.bloomberg.com/news/articles/2023-06-06/coinbase-threatens-to-take-sec-fight-to-supreme-court-if-needed"><i>Bloomberg</i></a>]
+                                </p>
+                                <p>Coinbase’s strategy all along has been to avoid regulation and hope it could lobby
+                                    Congress to make special rules for it.</p>
+                                <p>The new bill on crypto markets that House Republicans hope to put through would make
+                                    it easier for exchanges like Coinbase to trade tokens that would previously have
+                                    been unregistered penny stocks at best. [<a
+                                        href="https://www.bloomberg.com/news/articles/2023-06-02/key-house-republicans-unveil-crypto-market-structure-draft-bill"><i>Bloomberg</i></a>]
+                                </p>
+                                <p>They might be lucky? But crypto equals fraud in the minds of the public these days,
+                                    and hence in the minds of politicians.</p>
+                                <p>In any case, Brian Armstrong of Coinbase reassures us that this complaint is
+                                    <i>good</i> news. [<a
+                                        href="https://twitter.com/brian_armstrong/status/1666129111025324035"><i>Twitter</i></a>]
+                                </p>
+                                <p>Preston Byrne would like to point out that, as usual, he told you so. In 2014. [<a
+                                        href="https://prestonbyrne.com/2023/06/06/how-to-build-a-crypto-exchange-post-coinbase/"><i>blog
+                                            post</i></a>]</p>
+                                <h3>Good news for Coinbase?</h3>
+                                <p>Coinbase’s <a
+                                        href="https://amycastor.com/2023/04/29/crypto-collapse-coinbase-rattles-sabres-at-the-sec-voyager-sale-collapses-terra-luna-binance/">writ
+                                        of mandamus</a> demanding that the SEC look into its proposed new rules for
+                                    crypto is going a bit better than its attempts to dodge a suit. Judge Cheryl Ann
+                                    Krause of the Third Circuit Court of Appeals has told the SEC to answer within seven
+                                    days whether it’s denying Coinbase’s petition or not, if not then to tell her how
+                                    much time the SEC needs to decide, and to give status reports on how the work is
+                                    going. [<a
+                                        href="https://storage.courtlistener.com/recap/gov.uscourts.ca3.119939/gov.uscourts.ca3.119939.28.0.pdf"><i>Order</i></a><i>,
+                                        PDF; </i><a
+                                        href="https://www.courtlistener.com/docket/67273468/in-re-coinbase-inc/"><i>case
+                                            docket</i></a>]</p>
+                                <br><br>
+                                <div align="center">
+                                    <p><a href="https://www.patreon.com/bePatron?u=8420236"><img
+                                                src="https://davidgerard.co.uk/blockchain/wp-content/uploads/2021/10/become_a_patron_button.svg"
+                                                alt="Become a Patron!" title="Become a Patron!" width=217
+                                                height=51></a><br>
+                                    <p style="align:center;" class="patreon-badge"><i>Your subscriptions keep this site
+                                            going. <a href="https://www.patreon.com/bePatron?u=8420236">Sign up
+                                                today!</a></i></p>
+                                </div>
+                                <div class="sharedaddy sd-sharing-enabled">
+                                    <div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing">
+                                        <h3 class="sd-title">Share this:</h3>
+                                        <div class="sd-content">
+                                            <ul>
+                                                <li class="share-mastodon"><a rel="nofollow noopener noreferrer"
+                                                        data-shared="sharing-mastodon-25510"
+                                                        class="share-mastodon sd-button share-icon no-text"
+                                                        href="https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/?share=mastodon"
+                                                        target="_blank"
+                                                        title="Click to share on Mastodon"><span></span><span
+                                                            class="sharing-screen-reader-text">Click to share on
+                                                            Mastodon (Opens in new window)</span></a></li>
+                                                <li class="share-twitter"><a rel="nofollow noopener noreferrer"
+                                                        data-shared="sharing-twitter-25510"
+                                                        class="share-twitter sd-button share-icon no-text"
+                                                        href="https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/?share=twitter"
+                                                        target="_blank"
+                                                        title="Click to share on Twitter"><span></span><span
+                                                            class="sharing-screen-reader-text">Click to share on Twitter
+                                                            (Opens in new window)</span></a></li>
+                                                <li class="share-facebook"><a rel="nofollow noopener noreferrer"
+                                                        data-shared="sharing-facebook-25510"
+                                                        class="share-facebook sd-button share-icon no-text"
+                                                        href="https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/?share=facebook"
+                                                        target="_blank"
+                                                        title="Click to share on Facebook"><span></span><span
+                                                            class="sharing-screen-reader-text">Click to share on
+                                                            Facebook (Opens in new window)</span></a></li>
+                                                <li class="share-linkedin"><a rel="nofollow noopener noreferrer"
+                                                        data-shared="sharing-linkedin-25510"
+                                                        class="share-linkedin sd-button share-icon no-text"
+                                                        href="https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/?share=linkedin"
+                                                        target="_blank"
+                                                        title="Click to share on LinkedIn"><span></span><span
+                                                            class="sharing-screen-reader-text">Click to share on
+                                                            LinkedIn (Opens in new window)</span></a></li>
+                                                <li class="share-reddit"><a rel="nofollow noopener noreferrer"
+                                                        data-shared="" class="share-reddit sd-button share-icon no-text"
+                                                        href="https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/?share=reddit"
+                                                        target="_blank"
+                                                        title="Click to share on Reddit"><span></span><span
+                                                            class="sharing-screen-reader-text">Click to share on Reddit
+                                                            (Opens in new window)</span></a></li>
+                                                <li class="share-telegram"><a rel="nofollow noopener noreferrer"
+                                                        data-shared=""
+                                                        class="share-telegram sd-button share-icon no-text"
+                                                        href="https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/?share=telegram"
+                                                        target="_blank"
+                                                        title="Click to share on Telegram"><span></span><span
+                                                            class="sharing-screen-reader-text">Click to share on
+                                                            Telegram (Opens in new window)</span></a></li>
+                                                <li class="share-custom share-custom-hackernews"><a
+                                                        rel="nofollow noopener noreferrer" data-shared=""
+                                                        class="share-custom share-custom-hackernews sd-button share-icon no-text"
+                                                        href="https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/?share=custom-1526281877"
+                                                        target="_blank" title="Click to share on Hacker News"><span
+                                                            style="background-image:url(&quot;https://davidgerard.co.uk/blockchain/wp-content/uploads/2018/05/y18.gif&quot;);"></span><span
+                                                            class="sharing-screen-reader-text">Click to share on Hacker
+                                                            News (Opens in new window)</span></a></li>
+                                                <li class="share-email"><a rel="nofollow noopener noreferrer"
+                                                        data-shared="" class="share-email sd-button share-icon no-text"
+                                                        href="mailto:?subject=%5BShared%20Post%5D%20The%20SEC%20sues%20Coinbase.%20It%E2%80%99s%20on.&body=https%3A%2F%2Fdavidgerard.co.uk%2Fblockchain%2F2023%2F06%2F07%2Fthe-sec-sues-coinbase-its-on%2F&share=email"
+                                                        target="_blank" title="Click to email a link to a friend"
+                                                        data-email-share-error-title="Do you have email set up?"
+                                                        data-email-share-error-text="If you&#039;re having problems sharing via email, you might not have email set up for your browser. You may need to create a new email yourself."
+                                                        data-email-share-nonce="2104ebf2e2"
+                                                        data-email-share-track-url="https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/?share=email"><span></span><span
+                                                            class="sharing-screen-reader-text">Click to email a link to
+                                                            a friend (Opens in new window)</span></a></li>
+                                                <li class="share-end"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- .entry-content -->
+
+
+                            <footer class="entry-footer">
+                                <span class="hm-tags-links"><span class="hm-tagged">Tagged</span><a
+                                        href="https://davidgerard.co.uk/blockchain/tag/alabama/" rel="tag">alabama</a><a
+                                        href="https://davidgerard.co.uk/blockchain/tag/amp/" rel="tag">amp</a><a
+                                        href="https://davidgerard.co.uk/blockchain/tag/andreessen-horowitz/"
+                                        rel="tag">andreessen horowitz</a><a
+                                        href="https://davidgerard.co.uk/blockchain/tag/axie-infinity/" rel="tag">axie
+                                        infinity</a><a href="https://davidgerard.co.uk/blockchain/tag/brian-armstrong/"
+                                        rel="tag">brian armstrong</a><a
+                                        href="https://davidgerard.co.uk/blockchain/tag/california/"
+                                        rel="tag">california</a><a
+                                        href="https://davidgerard.co.uk/blockchain/tag/cardano/" rel="tag">cardano</a><a
+                                        href="https://davidgerard.co.uk/blockchain/tag/cheryl-ann-krause/"
+                                        rel="tag">cheryl ann krause</a><a
+                                        href="https://davidgerard.co.uk/blockchain/tag/chiliz/" rel="tag">chiliz</a><a
+                                        href="https://davidgerard.co.uk/blockchain/tag/coinbase/"
+                                        rel="tag">coinbase</a><a
+                                        href="https://davidgerard.co.uk/blockchain/tag/crypto-rating-council/"
+                                        rel="tag">crypto rating council</a><a
+                                        href="https://davidgerard.co.uk/blockchain/tag/dapper-labs/" rel="tag">dapper
+                                        labs</a><a href="https://davidgerard.co.uk/blockchain/tag/dash/"
+                                        rel="tag">dash</a><a href="https://davidgerard.co.uk/blockchain/tag/ddx/"
+                                        rel="tag">ddx</a><a href="https://davidgerard.co.uk/blockchain/tag/filecoin/"
+                                        rel="tag">filecoin</a><a href="https://davidgerard.co.uk/blockchain/tag/icp/"
+                                        rel="tag">icp</a><a href="https://davidgerard.co.uk/blockchain/tag/illinois/"
+                                        rel="tag">illinois</a><a
+                                        href="https://davidgerard.co.uk/blockchain/tag/katie-haun/" rel="tag">katie
+                                        haun</a><a href="https://davidgerard.co.uk/blockchain/tag/kentucky/"
+                                        rel="tag">kentucky</a><a href="https://davidgerard.co.uk/blockchain/tag/lcx/"
+                                        rel="tag">lcx</a><a
+                                        href="https://davidgerard.co.uk/blockchain/tag/marc-andreessen/" rel="tag">marc
+                                        andreessen</a><a href="https://davidgerard.co.uk/blockchain/tag/maryland/"
+                                        rel="tag">maryland</a><a href="https://davidgerard.co.uk/blockchain/tag/matic/"
+                                        rel="tag">matic</a><a href="https://davidgerard.co.uk/blockchain/tag/near/"
+                                        rel="tag">near</a><a href="https://davidgerard.co.uk/blockchain/tag/new-jersey/"
+                                        rel="tag">new jersey</a><a href="https://davidgerard.co.uk/blockchain/tag/nexo/"
+                                        rel="tag">nexo</a><a href="https://davidgerard.co.uk/blockchain/tag/omg/"
+                                        rel="tag">omg</a><a href="https://davidgerard.co.uk/blockchain/tag/paul-grewal/"
+                                        rel="tag">paul grewal</a><a
+                                        href="https://davidgerard.co.uk/blockchain/tag/powerledger/"
+                                        rel="tag">powerledger</a><a
+                                        href="https://davidgerard.co.uk/blockchain/tag/rally/" rel="tag">rally</a><a
+                                        href="https://davidgerard.co.uk/blockchain/tag/sandbox-blockchain-game/"
+                                        rel="tag">sandbox blockchain game</a><a
+                                        href="https://davidgerard.co.uk/blockchain/tag/sec/" rel="tag">sec</a><a
+                                        href="https://davidgerard.co.uk/blockchain/tag/solana/" rel="tag">solana</a><a
+                                        href="https://davidgerard.co.uk/blockchain/tag/south-carolina/" rel="tag">south
+                                        carolina</a><a href="https://davidgerard.co.uk/blockchain/tag/vermont/"
+                                        rel="tag">vermont</a><a
+                                        href="https://davidgerard.co.uk/blockchain/tag/voyager-digital/"
+                                        rel="tag">voyager digital</a><a
+                                        href="https://davidgerard.co.uk/blockchain/tag/washington/"
+                                        rel="tag">washington</a><a
+                                        href="https://davidgerard.co.uk/blockchain/tag/wisconsin/"
+                                        rel="tag">wisconsin</a><a href="https://davidgerard.co.uk/blockchain/tag/xyo/"
+                                        rel="tag">xyo</a></span>
+                            </footer><!-- .entry-footer -->
+
+
+                        </article><!-- #post-## -->
+                        <nav class="navigation post-navigation" aria-label="Posts">
+                            <h2 class="screen-reader-text">Post navigation</h2>
+                            <div class="nav-links">
+                                <div class="nav-previous"><a
+                                        href="https://davidgerard.co.uk/blockchain/2023/06/05/reggie-fowler-bitfinex-tether-money-mule-sentenced-to-6-years-in-prison/"
+                                        rel="prev"><span class="meta-nav" aria-hidden="true">Previous Article</span>
+                                        <span class="post-title">Reggie Fowler, Bitfinex/Tether money mule, sentenced to
+                                            6 years in prison</span></a></div>
+                                <div class="nav-next"><a
+                                        href="https://davidgerard.co.uk/blockchain/2023/06/12/sec-sues-binance-part-1-binance-us-asset-freeze-tai-chi-plan-sock-puppet-ceos-weird-cash-flows/"
+                                        rel="next"><span class="meta-nav" aria-hidden="true">Next Article</span> <span
+                                            class="post-title">SEC sues Binance, part 1: Binance US asset freeze, Tai
+                                            Chi plan, sock puppet CEOs, weird cash flows</span></a></div>
+                            </div>
+                        </nav>
+                        <div id="comments" class="comments-area">
+
+                            <h3 class="comments-title">
+                                7 Comments on &ldquo;The SEC sues Coinbase. It’s on.&rdquo;
+                            </h3><!-- .comments-title -->
+
+
+                            <ol class="comment-list">
+                                <li id="comment-204326" class="comment even thread-even depth-1 parent">
+                                    <article id="div-comment-204326" class="comment-body">
+                                        <footer class="comment-meta">
+                                            <div class="comment-author vcard">
+                                                <img alt=''
+                                                    src='https://secure.gravatar.com/avatar/b67ec7fea57a55f5438fd32ddfe3ded2?s=50&#038;d=retro&#038;r=g'
+                                                    srcset='https://secure.gravatar.com/avatar/b67ec7fea57a55f5438fd32ddfe3ded2?s=100&#038;d=retro&#038;r=g 2x'
+                                                    class='avatar avatar-50 photo' height='50' width='50' loading='lazy'
+                                                    decoding='async' /> <b class="fn">dave</b> <span
+                                                    class="says">says:</span>
+                                            </div><!-- .comment-author -->
+
+                                            <div class="comment-metadata">
+                                                <a
+                                                    href="https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/#comment-204326"><time
+                                                        datetime="2023-06-07T23:43:36+00:00">7th June 2023 at 11:43
+                                                        pm</time></a>
+                                            </div><!-- .comment-metadata -->
+
+                                        </footer><!-- .comment-meta -->
+
+                                        <div class="comment-content">
+                                            <p>&#8220;SEC wants Coinbase to be enjoined from doing any of this again,
+                                                pay disgorgement and interest, pay a civil money penalty, and pay
+                                                “equitable relief” to investors.&#8221;</p>
+                                            <p>None of these things are important, or even probably should happen.</p>
+                                            <p>Prison time is what matters&#8230;. because it is what would have stopped
+                                                these people from blatantly breaking the law in the first place.</p>
+                                        </div><!-- .comment-content -->
+
+                                        <div class="reply"><a rel='nofollow' class='comment-reply-link'
+                                                href='https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/?replytocom=204326#respond'
+                                                data-commentid="204326" data-postid="25510"
+                                                data-belowelement="div-comment-204326" data-respondelement="respond"
+                                                data-replyto="Reply to dave" aria-label='Reply to dave'>Reply</a></div>
+                                    </article><!-- .comment-body -->
+                                    <ol class="children">
+                                        <li id="comment-204383" class="comment odd alt depth-2">
+                                            <article id="div-comment-204383" class="comment-body">
+                                                <footer class="comment-meta">
+                                                    <div class="comment-author vcard">
+                                                        <img alt=''
+                                                            src='https://secure.gravatar.com/avatar/3e0cce970d132468dabae44fde2d0fc5?s=50&#038;d=retro&#038;r=g'
+                                                            srcset='https://secure.gravatar.com/avatar/3e0cce970d132468dabae44fde2d0fc5?s=100&#038;d=retro&#038;r=g 2x'
+                                                            class='avatar avatar-50 photo' height='50' width='50'
+                                                            loading='lazy' decoding='async' /> <b class="fn">Dan</b>
+                                                        <span class="says">says:</span>
+                                                    </div><!-- .comment-author -->
+
+                                                    <div class="comment-metadata">
+                                                        <a
+                                                            href="https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/#comment-204383"><time
+                                                                datetime="2023-06-08T18:32:31+00:00">8th June 2023 at
+                                                                6:32 pm</time></a>
+                                                    </div><!-- .comment-metadata -->
+
+                                                </footer><!-- .comment-meta -->
+
+                                                <div class="comment-content">
+                                                    <p>Clearly that’s not the case. Apparently if you spout enough
+                                                        bafflegab about ‘muh blockchain’ that makes you immune.</p>
+                                                </div><!-- .comment-content -->
+
+                                                <div class="reply"><a rel='nofollow' class='comment-reply-link'
+                                                        href='https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/?replytocom=204383#respond'
+                                                        data-commentid="204383" data-postid="25510"
+                                                        data-belowelement="div-comment-204383"
+                                                        data-respondelement="respond" data-replyto="Reply to Dan"
+                                                        aria-label='Reply to Dan'>Reply</a></div>
+                                            </article><!-- .comment-body -->
+                                        </li><!-- #comment-## -->
+                                    </ol><!-- .children -->
+                                </li><!-- #comment-## -->
+                                <li id="comment-204337" class="comment even thread-odd thread-alt depth-1">
+                                    <article id="div-comment-204337" class="comment-body">
+                                        <footer class="comment-meta">
+                                            <div class="comment-author vcard">
+                                                <img alt=''
+                                                    src='https://secure.gravatar.com/avatar/3e0cce970d132468dabae44fde2d0fc5?s=50&#038;d=retro&#038;r=g'
+                                                    srcset='https://secure.gravatar.com/avatar/3e0cce970d132468dabae44fde2d0fc5?s=100&#038;d=retro&#038;r=g 2x'
+                                                    class='avatar avatar-50 photo' height='50' width='50' loading='lazy'
+                                                    decoding='async' /> <b class="fn">Dan</b> <span
+                                                    class="says">says:</span>
+                                            </div><!-- .comment-author -->
+
+                                            <div class="comment-metadata">
+                                                <a
+                                                    href="https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/#comment-204337"><time
+                                                        datetime="2023-06-08T03:46:39+00:00">8th June 2023 at 3:46
+                                                        am</time></a>
+                                            </div><!-- .comment-metadata -->
+
+                                        </footer><!-- .comment-meta -->
+
+                                        <div class="comment-content">
+                                            <p>How is the XRP suit coming along? Do they have much chance of convincing
+                                                everyone their imaginary Monopoly money is the real imaginary Monopoly
+                                                money and not the fake variety?</p>
+                                        </div><!-- .comment-content -->
+
+                                        <div class="reply"><a rel='nofollow' class='comment-reply-link'
+                                                href='https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/?replytocom=204337#respond'
+                                                data-commentid="204337" data-postid="25510"
+                                                data-belowelement="div-comment-204337" data-respondelement="respond"
+                                                data-replyto="Reply to Dan" aria-label='Reply to Dan'>Reply</a></div>
+                                    </article><!-- .comment-body -->
+                                </li><!-- #comment-## -->
+                                <li id="comment-204339" class="comment odd alt thread-even depth-1 parent">
+                                    <article id="div-comment-204339" class="comment-body">
+                                        <footer class="comment-meta">
+                                            <div class="comment-author vcard">
+                                                <img alt=''
+                                                    src='https://secure.gravatar.com/avatar/a0b2413a04639dcd3c7f6ff680418b75?s=50&#038;d=retro&#038;r=g'
+                                                    srcset='https://secure.gravatar.com/avatar/a0b2413a04639dcd3c7f6ff680418b75?s=100&#038;d=retro&#038;r=g 2x'
+                                                    class='avatar avatar-50 photo' height='50' width='50' loading='lazy'
+                                                    decoding='async' /> <b class="fn">Zachary Hogan</b> <span
+                                                    class="says">says:</span>
+                                            </div><!-- .comment-author -->
+
+                                            <div class="comment-metadata">
+                                                <a
+                                                    href="https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/#comment-204339"><time
+                                                        datetime="2023-06-08T05:02:03+00:00">8th June 2023 at 5:02
+                                                        am</time></a>
+                                            </div><!-- .comment-metadata -->
+
+                                        </footer><!-- .comment-meta -->
+
+                                        <div class="comment-content">
+                                            <p>I&#8217;m just surprised that so few coins were listed as being a problem
+                                                considering many of them are just clones of other coins that
+                                                weren&#8217;t included here. I wonder if they&#8217;ll be expanding the
+                                                list of securities coins in the future.</p>
+                                        </div><!-- .comment-content -->
+
+                                        <div class="reply"><a rel='nofollow' class='comment-reply-link'
+                                                href='https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/?replytocom=204339#respond'
+                                                data-commentid="204339" data-postid="25510"
+                                                data-belowelement="div-comment-204339" data-respondelement="respond"
+                                                data-replyto="Reply to Zachary Hogan"
+                                                aria-label='Reply to Zachary Hogan'>Reply</a></div>
+                                    </article><!-- .comment-body -->
+                                    <ol class="children">
+                                        <li id="comment-204347" class="comment even depth-2">
+                                            <article id="div-comment-204347" class="comment-body">
+                                                <footer class="comment-meta">
+                                                    <div class="comment-author vcard">
+                                                        <img alt=''
+                                                            src='https://secure.gravatar.com/avatar/2de9fb078381cab59c9f12d36b3a3285?s=50&#038;d=retro&#038;r=g'
+                                                            srcset='https://secure.gravatar.com/avatar/2de9fb078381cab59c9f12d36b3a3285?s=100&#038;d=retro&#038;r=g 2x'
+                                                            class='avatar avatar-50 photo' height='50' width='50'
+                                                            loading='lazy' decoding='async' /> <b class="fn">Craig
+                                                            Burley</b> <span class="says">says:</span>
+                                                    </div><!-- .comment-author -->
+
+                                                    <div class="comment-metadata">
+                                                        <a
+                                                            href="https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/#comment-204347"><time
+                                                                datetime="2023-06-08T08:06:50+00:00">8th June 2023 at
+                                                                8:06 am</time></a>
+                                                    </div><!-- .comment-metadata -->
+
+                                                </footer><!-- .comment-meta -->
+
+                                                <div class="comment-content">
+                                                    <p>It would needlessly multiply work for the lawyers.</p>
+                                                </div><!-- .comment-content -->
+
+                                                <div class="reply"><a rel='nofollow' class='comment-reply-link'
+                                                        href='https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/?replytocom=204347#respond'
+                                                        data-commentid="204347" data-postid="25510"
+                                                        data-belowelement="div-comment-204347"
+                                                        data-respondelement="respond"
+                                                        data-replyto="Reply to Craig Burley"
+                                                        aria-label='Reply to Craig Burley'>Reply</a></div>
+                                            </article><!-- .comment-body -->
+                                        </li><!-- #comment-## -->
+                                        <li id="comment-204348"
+                                            class="comment byuser comment-author-david-gerard bypostauthor odd alt depth-2">
+                                            <article id="div-comment-204348" class="comment-body">
+                                                <footer class="comment-meta">
+                                                    <div class="comment-author vcard">
+                                                        <img alt=''
+                                                            src='https://secure.gravatar.com/avatar/61f10ec2a65f027f6a81d23d463d1131?s=50&#038;d=retro&#038;r=g'
+                                                            srcset='https://secure.gravatar.com/avatar/61f10ec2a65f027f6a81d23d463d1131?s=100&#038;d=retro&#038;r=g 2x'
+                                                            class='avatar avatar-50 photo' height='50' width='50'
+                                                            loading='lazy' decoding='async' /> <b class="fn">David
+                                                            Gerard</b> <span class="says">says:</span>
+                                                    </div><!-- .comment-author -->
+
+                                                    <div class="comment-metadata">
+                                                        <a
+                                                            href="https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/#comment-204348"><time
+                                                                datetime="2023-06-08T08:25:51+00:00">8th June 2023 at
+                                                                8:25 am</time></a>
+                                                    </div><!-- .comment-metadata -->
+
+                                                </footer><!-- .comment-meta -->
+
+                                                <div class="comment-content">
+                                                    <p>The legal theory in all SEC cases and admin orders so far is that
+                                                        any particular coin was <i>always</i> a security, by the nature
+                                                        of what the promoters were doing &#8211; it doesn&#8217;t
+                                                        require the SEC to say it is.</p>
+                                                </div><!-- .comment-content -->
+
+                                                <div class="reply"><a rel='nofollow' class='comment-reply-link'
+                                                        href='https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/?replytocom=204348#respond'
+                                                        data-commentid="204348" data-postid="25510"
+                                                        data-belowelement="div-comment-204348"
+                                                        data-respondelement="respond"
+                                                        data-replyto="Reply to David Gerard"
+                                                        aria-label='Reply to David Gerard'>Reply</a></div>
+                                            </article><!-- .comment-body -->
+                                        </li><!-- #comment-## -->
+                                    </ol><!-- .children -->
+                                </li><!-- #comment-## -->
+                                <li id="comment-204351" class="comment even thread-odd thread-alt depth-1">
+                                    <article id="div-comment-204351" class="comment-body">
+                                        <footer class="comment-meta">
+                                            <div class="comment-author vcard">
+                                                <img alt=''
+                                                    src='https://secure.gravatar.com/avatar/6257a66d8955721382d083cda6308ef1?s=50&#038;d=retro&#038;r=g'
+                                                    srcset='https://secure.gravatar.com/avatar/6257a66d8955721382d083cda6308ef1?s=100&#038;d=retro&#038;r=g 2x'
+                                                    class='avatar avatar-50 photo' height='50' width='50' loading='lazy'
+                                                    decoding='async' /> <b class="fn">Richard Vivian</b> <span
+                                                    class="says">says:</span>
+                                            </div><!-- .comment-author -->
+
+                                            <div class="comment-metadata">
+                                                <a
+                                                    href="https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/#comment-204351"><time
+                                                        datetime="2023-06-08T08:47:55+00:00">8th June 2023 at 8:47
+                                                        am</time></a>
+                                            </div><!-- .comment-metadata -->
+
+                                        </footer><!-- .comment-meta -->
+
+                                        <div class="comment-content">
+                                            <p>Thanks! Finally, a concise to the point explanation.<br />
+                                                What a bunch of crooks</p>
+                                        </div><!-- .comment-content -->
+
+                                        <div class="reply"><a rel='nofollow' class='comment-reply-link'
+                                                href='https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/?replytocom=204351#respond'
+                                                data-commentid="204351" data-postid="25510"
+                                                data-belowelement="div-comment-204351" data-respondelement="respond"
+                                                data-replyto="Reply to Richard Vivian"
+                                                aria-label='Reply to Richard Vivian'>Reply</a></div>
+                                    </article><!-- .comment-body -->
+                                </li><!-- #comment-## -->
+                            </ol><!-- .comment-list -->
+
+                            <div id="respond" class="comment-respond">
+                                <h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow"
+                                            id="cancel-comment-reply-link"
+                                            href="/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/#respond"
+                                            style="display:none;">Cancel reply</a></small></h3>
+                                <form action="https://davidgerard.co.uk/blockchain/wp-comments-post.php" method="post"
+                                    id="commentform" class="comment-form" novalidate>
+                                    <p class="comment-notes"><span id="email-notes">Your email address will not be
+                                            published.</span> <span class="required-field-message">Required fields are
+                                            marked <span class="required">*</span></span></p>
+                                    <p class="comment-form-comment"><label for="comment">Comment <span
+                                                class="required">*</span></label> <textarea id="comment" name="comment"
+                                            cols="45" rows="8" maxlength="65525" required></textarea></p>
+                                    <p class="comment-form-author"><label for="author">Name <span
+                                                class="required">*</span></label> <input id="author" name="author"
+                                            type="text" value="" size="30" maxlength="245" autocomplete="name"
+                                            required /></p>
+                                    <p class="comment-form-email"><label for="email">Email <span
+                                                class="required">*</span></label> <input id="email" name="email"
+                                            type="email" value="" size="30" maxlength="100"
+                                            aria-describedby="email-notes" autocomplete="email" required /></p>
+                                    <p class="comment-form-url"><label for="url">Website</label> <input id="url"
+                                            name="url" type="url" value="" size="30" maxlength="200"
+                                            autocomplete="url" /></p>
+                                    <p class="comment-subscription-form"><input type="checkbox"
+                                            name="subscribe_comments" id="subscribe_comments" value="subscribe"
+                                            style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" />
+                                        <label class="subscribe-label" id="subscribe-label"
+                                            for="subscribe_comments">Notify me of follow-up comments by email.</label>
+                                    </p>
+                                    <p class="comment-subscription-form"><input type="checkbox" name="subscribe_blog"
+                                            id="subscribe_blog" value="subscribe"
+                                            style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" />
+                                        <label class="subscribe-label" id="subscribe-blog-label"
+                                            for="subscribe_blog">Notify me of new posts by email.</label>
+                                    </p>
+                                    <p class="form-submit"><input name="submit" type="submit" id="submit" class="submit"
+                                            value="Post Comment" /> <input type='hidden' name='comment_post_ID'
+                                            value='25510' id='comment_post_ID' />
+                                        <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+                                    </p>
+                                    <p style="display: none;"><input type="hidden" id="akismet_comment_nonce"
+                                            name="akismet_comment_nonce" value="69f12e99f7" /></p>
+                                    <p style="display: none !important;"><label>&#916;<textarea name="ak_hp_textarea"
+                                                cols="45" rows="8" maxlength="100"></textarea></label><input
+                                            type="hidden" id="ak_js_1" name="ak_js" value="59" />
+                                        <script>document.getElementById("ak_js_1").setAttribute("value", (new Date()).getTime());</script>
+                                    </p>
+                                </form>
+                            </div><!-- #respond -->
+                            <p class="akismet_comment_form_privacy_notice">This site uses Akismet to reduce spam. <a
+                                    href="https://akismet.com/privacy/" target="_blank" rel="nofollow noopener">Learn
+                                    how your comment data is processed</a>.</p>
+                        </div><!-- #comments -->
+
+                    </main><!-- #main -->
+                </div><!-- #primary -->
+
+
+                <aside id="secondary" class="widget-area" role="complementary">
+
+
+                    <section id="search-2" class="widget widget_search">
+                        <form role="search" method="get" class="search-form"
+                            action="https://davidgerard.co.uk/blockchain/">
+                            <label>
+                                <span class="screen-reader-text">Search for:</span>
+                                <input type="search" class="search-field" placeholder="Search &hellip;" value=""
+                                    name="s" />
+                            </label>
+                            <input type="submit" class="search-submit" value="Search" />
+                        </form>
+                    </section>
+                    <section id="text-12" class="widget widget_text">
+                        <div class="textwidget">
+                            <p align="center"><a href="https://davidgerard.co.uk/blockchain/libra/"><img
+                                        decoding="async"
+                                        src="https://davidgerard.co.uk/blockchain/wp-content/uploads/2020/10/libra-shrugged-david-gerard-ebook-front-240px.jpg"
+                                        alt="" border="0" /></a></p>
+                            <p align="center"><a href="https://davidgerard.co.uk/blockchain/book/"><img decoding="async"
+                                        src="https://davidgerard.co.uk/blockchain/wp-content/uploads/2017/08/attack-of-the-50-foot-blockchain-david-gerard-paperback-front-240px.jpg"
+                                        alt="" border="0" /></a></p>
+                            <p style="align: center; margin-left: 4em;"><a
+                                    href="https://davidgerard.co.uk/blockchain/2020/11/26/get-signed-copies-of-libra-shrugged-and-attack-of-the-50-foot-blockchain/"><i><b><big>Click
+                                                here to get<br />
+                                                signed copies of the books!</big></b></i></a></p>
+                            <p>&nbsp;<a id="byemail" /></p>
+                        </div>
+                    </section>
+                    <section id="blog_subscription-2"
+                        class="widget widget_blog_subscription jetpack_subscription_widget">
+                        <h4 class="widget-title">Get blog posts by email!</h4>
+                        <div class="wp-block-jetpack-subscriptions__container">
+                            <form action="#" method="post" accept-charset="utf-8"
+                                id="subscribe-blog-blog_subscription-2" data-blog="127875964"
+                                data-post_access_level="everybody">
+                                <div id="subscribe-text">
+                                    <p><a id="byemail" /></p>
+                                </div>
+                                <p id="subscribe-email">
+                                    <label id="jetpack-subscribe-label" class="screen-reader-text"
+                                        for="subscribe-field-blog_subscription-2">
+                                        Email Address </label>
+                                    <input type="email" name="email" required="required" value=""
+                                        id="subscribe-field-blog_subscription-2" placeholder="Email Address" />
+                                </p>
+
+                                <p id="subscribe-submit">
+                                    <input type="hidden" name="action" value="subscribe" />
+                                    <input type="hidden" name="source"
+                                        value="https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/" />
+                                    <input type="hidden" name="sub-type" value="widget" />
+                                    <input type="hidden" name="redirect_fragment"
+                                        value="subscribe-blog-blog_subscription-2" />
+                                    <button type="submit" class="wp-block-button__link"
+                                        name="jetpack_subscriptions_widget">
+                                        Subscribe </button>
+                                </p>
+                            </form>
+                        </div>
+
+                    </section>
+                    <section id="text-14" class="widget widget_text">
+                        <h4 class="widget-title">Support this site on Patreon!</h4>
+                        <div class="textwidget">
+                            <p>Hack through the blockchain bafflegab:</p>
+                            <ul>
+                                <li><a href="https://www.patreon.com/davidgerard/overview"><strong>$5/month</strong> for
+                                        early access to works in progress!</a></li>
+                                <li><a href="https://www.patreon.com/davidgerard/overview"><strong>$20/month</strong>
+                                        for early access and even greater support!</a></li>
+                                <li><a href="https://www.patreon.com/join/davidgerard/checkout?rid=6951364"><strong>$100/month</strong>
+                                        corporate rate, for your analyst newsletter budget!</a></li>
+                            </ul>
+                            <p></p>
+                            <p align="center"><a href="https://www.patreon.com/davidgerard/overview"><img
+                                        decoding="async" loading="lazy" title="Become a Patron!"
+                                        src="https://davidgerard.co.uk/blockchain/wp-content/uploads/2021/10/become_a_patron_button.svg"
+                                        alt="Become a Patron!" width="217" height="51" align="middle" /></a></p>
+                        </div>
+                    </section>
+                    <section id="text-10" class="widget widget_text">
+                        <h4 class="widget-title">Buy the books!</h4>
+                        <div class="textwidget">
+                            <p><b><strong><i>Libra Shrugged</i></strong></b></p>
+                            <ul>
+                                <li><big><strong><a href="https://amzn.to/2HLzxGa"> US Paperback</a><br /><a
+                                                href="https://amzn.to/3mF8bke">UK/Europe
+                                                Paperback</a></strong></big><br />
+                                    ISBN-13: 9798693053977</li>
+                                <li class="page_item">Kindle: <a href="https://amzn.to/3oPkxYL">UK</a>, <a
+                                        href="https://amzn.to/34QDUsA">US</a>, <a
+                                        href="https://www.amazon.com.au/Libra-Shrugged-Facebook-Tried-Money-ebook/dp/B08KK9SZP6/">Australia</a>,
+                                    <a
+                                        href="https://www.amazon.ca/Libra-Shrugged-Facebook-Tried-Money-ebook/dp/B08KK9SZP6/">Canada</a>
+                                    (and all other Kindle stores) — <em>no DRM</em>
+                                </li>
+                                <li><a
+                                        href="https://play.google.com/store/books/details/David_Gerard_Libra_Shrugged?id=dyIGEAAAQBAJ">Google
+                                        Play Books</a> (PDF)</li>
+                                <li><a href="https://books2read.com/u/mlWvQq?store=apple">Apple Books</a></li>
+                                <li><a href="https://books2read.com/u/mlWvQq?store=kobo">Kobo</a></li>
+                                <li><a href="https://www.smashwords.com/books/view/1046699">Smashwords</a></li>
+                                <li><a href="https://books2read.com/u/mlWvQq">Other e-book stores</a></li>
+                            </ul>
+                            <p>
+                            <p><b><strong><i>Attack of the 50 Foot Blockchain</i></strong></b></p>
+                            <ul>
+                                <li><big><strong><a href="http://amzn.to/2xSxs1e"> US Paperback</a><br /><a
+                                                href="http://amzn.to/2iW7kzW">UK/Europe
+                                                Paperback</a></strong></big><br />
+                                    ISBN-13: 9781974000067</li>
+                                <li class="page_item">Kindle: <a href="http://amzn.to/2iWo4aa">UK</a>, <a
+                                        href="http://amzn.to/2zf7f0i">US</a>, <a
+                                        href="https://www.amazon.com.au/dp/B073CPP581">Australia</a>, <a
+                                        href="https://www.amazon.ca/dp/B073CPP581">Canada</a> (and all other Kindle
+                                    stores) — <em>no DRM</em></li>
+                                <li><a
+                                        href="https://play.google.com/store/books/details/David_Gerard_Attack_of_the_50_Foot_Blockchain?id=L7hEDwAAQBAJ">Google
+                                        Play Books</a> (PDF)</li>
+                                <li><a href="https://books2read.com/u/boYYpL?store=apple">Apple Books</a></li>
+                                <li><a href="https://books2read.com/u/boYYpL?store=kobo">Kobo</a></li>
+                                <li class="page_item"><a
+                                        href="https://www.smashwords.com/books/view/739078">Smashwords</a></li>
+                                <li><a href="https://books2read.com/u/boYYpL">Other e-book stores</a></li>
+                                <li><big>Available worldwide</big></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="rss_links-2" class="widget widget_rss_links">
+                        <p><a target="_self" href="https://davidgerard.co.uk/blockchain/feed/"
+                                title="Subscribe to posts"><img
+                                    src="https://davidgerard.co.uk/blockchain/wp-content/plugins/jetpack/images/rss/red-small.png"
+                                    alt="RSS Feed" />&nbsp;RSS – Posts</a></p>
+                        <p><a target="_self" href="https://davidgerard.co.uk/blockchain/comments/feed/"
+                                title="Subscribe to comments"><img
+                                    src="https://davidgerard.co.uk/blockchain/wp-content/plugins/jetpack/images/rss/red-small.png"
+                                    alt="RSS Feed" />&nbsp;RSS – Comments</a></p>
+                    </section>
+                    <section id="recent-posts-3" class="widget widget_recent_entries">
+                        <h4 class="widget-title">Recent blog posts</h4>
+                        <ul>
+                            <li>
+                                <a
+                                    href="https://davidgerard.co.uk/blockchain/2023/06/12/sec-sues-binance-part-1-binance-us-asset-freeze-tai-chi-plan-sock-puppet-ceos-weird-cash-flows/">SEC
+                                    sues Binance, part 1: Binance US asset freeze, Tai Chi plan, sock puppet CEOs, weird
+                                    cash flows</a>
+                            </li>
+                            <li>
+                                <a href="https://davidgerard.co.uk/blockchain/2023/06/07/the-sec-sues-coinbase-its-on/"
+                                    aria-current="page">The SEC sues Coinbase. It’s on.</a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://davidgerard.co.uk/blockchain/2023/06/05/reggie-fowler-bitfinex-tether-money-mule-sentenced-to-6-years-in-prison/">Reggie
+                                    Fowler, Bitfinex/Tether money mule, sentenced to 6 years in prison</a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://davidgerard.co.uk/blockchain/2023/06/03/crypto-collapse-get-in-loser-were-pivoting-to-ai/">Crypto
+                                    collapse? Get in loser, we’re pivoting to AI</a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://davidgerard.co.uk/blockchain/2023/05/26/crypto-collapse-fahrenheit-buys-celsius-dcg-may-be-broke-hong-kong-cracks-down-binance-commingling-how-bitfinex-was-hacked/">Crypto
+                                    collapse: Fahrenheit buys Celsius, DCG may be broke, Hong Kong cracks down, Binance
+                                    commingling, how Bitfinex was hacked</a>
+                            </li>
+                        </ul>
+
+                    </section>
+                    <section id="text-8" class="widget widget_text">
+                        <h4 class="widget-title">Excerpts from Attack of the 50 Foot Blockchain</h4>
+                        <div class="textwidget">
+                            <p><b><a href="https://davidgerard.co.uk/blockchain/table-of-contents/">Table of
+                                        Contents</a></b></p>
+                            <ul>
+                                <li class="page_item page-item-27"><a
+                                        href="https://davidgerard.co.uk/blockchain/the-conspiracist-gold-bug-economics-of-bitcoin/">The
+                                        conspiracy theory economics of Bitcoin</a></li>
+                                <li class="page_item page-item-31"><a
+                                        href="https://davidgerard.co.uk/blockchain/dogecoin/">Dogecoin</a></li>
+                                <li class="page_item page-item-35"><a
+                                        href="https://davidgerard.co.uk/blockchain/buterins-quantum-quest/">Buterin’s
+                                        quantum quest</a></li>
+                                <li><a
+                                        href="https://davidgerard.co.uk/blockchain/icos-magic-beans-and-bubble-machines/">ICOs:
+                                        magic beans and bubble machines</a></li>
+                                <li class="page_item page-item-37"><a
+                                        href="https://davidgerard.co.uk/blockchain/ethereum-smart-contracts-in-practice/">Ethereum
+                                        smart contracts in practice</a></li>
+                                <li class="page_item page-item-39"><a
+                                        href="https://davidgerard.co.uk/blockchain/the-dao/">The DAO: the steadfast iron
+                                        will of unstoppable code</a></li>
+                                <li class="page_item page-item-41"><a
+                                        href="https://davidgerard.co.uk/blockchain/business-bafflegab-but-on-the-blockchain/">Business
+                                        bafflegab, but on the Blockchain</a></li>
+                                <li class="page_item page-item-47"><a
+                                        href="https://davidgerard.co.uk/blockchain/imogen-heap-tiny-human-total-sales-133-20/">Imogen
+                                        Heap: “Tiny Human”. Total sales: $133.20</a></li>
+                            </ul>
+                            <p><a href="https://davidgerard.co.uk/blockchain/index/"><strong>Index</strong></a></p>
+                        </div>
+                    </section>
+                    <section id="text-9" class="widget widget_text">
+                        <h4 class="widget-title">About</h4>
+                        <div class="textwidget">
+                            <p><a href="https://davidgerard.co.uk/blockchain/about/libra-shrugged-paperback-225/"><img
+                                        decoding="async" loading="lazy" class="aligncenter wp-image-17907 size-full"
+                                        src="https://davidgerard.co.uk/blockchain/wp-content/uploads/2020/11/libra-shrugged-paperback-225.jpg"
+                                        alt="" width="225" height="300" /></a></p>
+                            <ul>
+                                <li><a href="https://davidgerard.co.uk/blockchain/press-coverage/">Press coverage for
+                                        <i>Attack of the 50 Foot Blockchain</i></a></li>
+                                <li><a href="https://davidgerard.co.uk/blockchain/press-libra/">Press coverage for
+                                        <i>Libra Shrugged</i></a></li>
+                                <li><a href="https://davidgerard.co.uk/blockchain/comment/">My cryptocurrency and
+                                        blockchain press commentary and writing</a></li>
+                                <li>Mastodon <a href="https://circumstances.run/@davidgerard"
+                                        rel="me">@davidgerard@circumstances.run</a></li>
+                                <li><s><a href="https://twitter.com/davidgerard">Twitter @davidgerard</a></s></li>
+                                <li><a href="https://www.facebook.com/DavidGerard.author/">Facebook author page</a></li>
+                                <li><a href="https://davidgerard.co.uk/blockchain/about/">About the author</a></li>
+                                <li><a href="https://davidgerard.co.uk/blockchain/about/">Contact</a></li>
+                            </ul>
+                            <hr />
+                            <p align="justify">The content of this site is journalism and personal opinion. Nothing
+                                contained on this site is, or should be construed as providing or offering, investment,
+                                legal, accounting, tax or other advice. Do not act on any opinion expressed here without
+                                consulting a qualified professional.</p>
+                            <p align="justify">I do not hold a position in any crypto asset or cryptocurrency or
+                                blockchain company.</p>
+                            <p align="justify">Amazon product links on this site are affiliate links — as an Amazon
+                                Associate I earn from qualifying purchases. (This doesn&#8217;t cost you any extra.)</p>
+                        </div>
+                    </section>
+
+                </aside><!-- #secondary -->
+            </div><!-- .hm-container -->
+        </div><!-- #content -->
+
+
+        <footer id="colophon" class="site-footer" role="contentinfo">
+            <div class="hm-container">
+
+
+                <div class="footer-widget-area">
+                    <div class="footer-sidebar" role="complementary">
+
+                    </div><!-- .footer-sidebar -->
+
+                    <div class="footer-sidebar" role="complementary">
+
+                    </div><!-- .footer-sidebar -->
+
+                    <div class="footer-sidebar" role="complementary">
+
+                    </div><!-- .footer-sidebar -->
+                </div><!-- .footer-widget-area -->
+
+
+            </div><!-- .hm-container -->
+
+            <div class="site-info">
+                <div class="hm-container">
+                    <div class="site-info-owner">
+                        Copyright © 2016–2023 David Gerard </div>
+                    <div class="site-info-designer">
+                        Powered by <a href="https://wordpress.org" target="_blank" title="WordPress">WordPress</a> and
+                        <a href="https://themezhut.com/themes/hitmag/" target="_blank"
+                            title="HitMag WordPress Theme">HitMag</a>.
+                    </div>
+                </div><!-- .hm-container -->
+            </div><!-- .site-info -->
+        </footer><!-- #colophon -->
+
+
+    </div><!-- #page -->
+
+
+    <script>
+        ; (function () {
+            window.wpDarkMode = { "config": { "brightness": 100, "contrast": 90, "sepia": 10 }, "enable_preset": false, "customize_colors": false, "colors": { "bg": "#000", "text": "#dfdedb", "link": "#e58c17" }, "enable_frontend": true, "enable_backend": false, "enable_os_mode": true, "excludes": "rs-fullwidth-wrap, .mejs-container, ._channels-container", "includes": "", "is_excluded": false, "remember_darkmode": false, "default_mode": false, "keyboard_shortcut": true, "url_parameter": false, "images": { "light_images": [""], "dark_images": [""], "low_brightness": "on", "grayscale": "off" }, "videos": "", "is_pro_active": false, "is_ultimate_active": false, "pro_version": 0, "is_elementor_editor": false, "is_block_editor": false, "frontend_mode": false, "pluginUrl": "https:\/\/davidgerard.co.uk\/blockchain\/wp-content\/plugins\/wp-dark-mode\/" };
+            window.checkOsDarkMode = () => {
+                if (!window.wpDarkMode.enable_os_mode || localStorage.getItem('wp_dark_mode_active')) return false;
+                const darkMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+                if (darkMediaQuery.matches) return true;
+                try { darkMediaQuery.addEventListener('change', function (e) { return e.matches == true; }); } catch (e1) {
+                    try { darkMediaQuery.addListener(function (e) { return e.matches == true; }); } catch (e2) { console.error(e2); return false; }
+                } return false;
+            };
+            const is_saved = localStorage.getItem('wp_dark_mode_active'); const shouldDarkMode = is_saved == '1' || (!is_saved && window.checkOsDarkMode());
+            if (shouldDarkMode) {
+                const isCustomColor = parseInt("");
+                const isPerformanceMode = Boolean(); if (!isCustomColor && !isPerformanceMode) {
+                    if (document.getElementById('pre_css')) { document.getElementById('pre_css').remove(); }
+                    if ('' === ``) { if (typeof DarkMode === 'object') DarkMode.enable(); }
+                }
+            }
+        })(); 
+    </script>
+
+    <div class="wp-dark-mode-switcher wp-dark-mode-ignore style-1  floating right_bottom">
+
+
+        <label for="wp-dark-mode-switch" class="wp-dark-mode-ignore wp-dark-mode-none">
+            <div class="modes wp-dark-mode-ignore">
+                <img class="light"
+                    src="https://davidgerard.co.uk/blockchain/wp-content/plugins/wp-dark-mode/assets/images/btn-1/light.png"
+                    alt="Light">
+                <img class="dark"
+                    src="https://davidgerard.co.uk/blockchain/wp-content/plugins/wp-dark-mode/assets/images/btn-1/dark.png"
+                    alt="Dark">
+            </div>
+        </label>
+    </div>
+    <div style="display:none">
+        <div class="grofile-hash-map-b67ec7fea57a55f5438fd32ddfe3ded2">
+        </div>
+        <div class="grofile-hash-map-3e0cce970d132468dabae44fde2d0fc5">
+        </div>
+        <div class="grofile-hash-map-a0b2413a04639dcd3c7f6ff680418b75">
+        </div>
+        <div class="grofile-hash-map-2de9fb078381cab59c9f12d36b3a3285">
+        </div>
+        <div class="grofile-hash-map-61f10ec2a65f027f6a81d23d463d1131">
+        </div>
+        <div class="grofile-hash-map-6257a66d8955721382d083cda6308ef1">
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

@@ -10,39 +10,6 @@ const mouseEntered = [];
 const EVENT_MOUSE_ENTER = 'mouseenter';
 const EVENT_MOUSE_LEAVE = 'mouseleave';
 const EVENT_MOUSE_CLICK = 'click';
-const INLINE_TEXT_ELEMENTS = [
-    "A",
-    "ABBR",
-    "B",
-    "BDI",
-    "BDO",
-    "BR",
-    "CITE",
-    "CODE",
-    "DATA",
-    "DFN",
-    "EM",
-    "I",
-    "KBD",
-    "MARK",
-    "Q",
-    "RP",
-    "RT",
-    "RUBY",
-    "S",
-    "SAMP",
-    "SMALL",
-    "SPAN",
-    "STRONG",
-    "SUB",
-    "SUP",
-    "TIME",
-    "U",
-    "VAR",
-    "WBR"
-];
-
-
 
 // document.addEventListener(EVENT_MOUSE_ENTER, e => {
 
@@ -70,133 +37,80 @@ const INLINE_TEXT_ELEMENTS = [
 // }, true);
 
 
+// function candidateElEvent(eventEl, eventType) {
 
-function candidateElEvent(eventEl, eventType) {
+//     if (eventType === EVENT_MOUSE_ENTER) {
 
-    if (eventType === EVENT_MOUSE_ENTER) {
+//         currentMouseOverBoundary = eventEl;
 
-        currentMouseOverBoundary = eventEl;
+//         if (!mouseEntered.includes(eventEl)) {
 
-        if (!mouseEntered.includes(eventEl)) {
+//             mouseEntered.push(eventEl);
 
-            mouseEntered.push(eventEl);
+//         }
 
-        }
+//         boundaryNodes.forEach(candidateEl => {
 
-        boundaryNodes.forEach(candidateEl => {
+//             candidateEl.dataset.boundaryOver = candidateEl === eventEl;
 
-            candidateEl.dataset.boundaryOver = candidateEl === eventEl;
+//         });
 
-        });
+//     }
 
-    }
+//     if (eventType === EVENT_MOUSE_LEAVE) {
 
-    if (eventType === EVENT_MOUSE_LEAVE) {
+//         if (mouseEntered.includes(eventEl)) {
 
-        if (mouseEntered.includes(eventEl)) {
+//             mouseEntered.splice(mouseEntered.indexOf(eventEl), 1);
 
-            mouseEntered.splice(mouseEntered.indexOf(eventEl), 1);
+//         }
 
-        }
+//         const nextCandidateNode = !!mouseEntered.length && mouseEntered[mouseEntered.length - 1];
 
-        const nextCandidateNode = !!mouseEntered.length && mouseEntered[mouseEntered.length - 1];
+//         currentMouseOverBoundary = nextCandidateNode;
 
-        currentMouseOverBoundary = nextCandidateNode;
+//         boundaryNodes.forEach(candidateEl => {
 
-        boundaryNodes.forEach(candidateEl => {
+//             candidateEl.dataset.boundaryOver = !!nextCandidateNode && candidateEl === nextCandidateNode;
 
-            candidateEl.dataset.boundaryOver = !!nextCandidateNode && candidateEl === nextCandidateNode;
+//         });
 
-        });
-
-    }
-
-
-    if (eventType === EVENT_MOUSE_CLICK) {
-
-        boundaryNodes.forEach(candidateEl => {
-
-            if (candidateEl === currentMouseOverBoundary) {
-
-                candidateEl.dataset.boundarySelected = true;
-
-            } else {
-
-                candidateEl.dataset.boundarySelected = false;
-
-            }
-
-        });
-
-    }
-
-}
+//     }
 
 
+//     if (eventType === EVENT_MOUSE_CLICK) {
 
-function getTextNodes(boundaryEl, textNodes = []) {
+//         boundaryNodes.forEach(candidateEl => {
 
-    if (isNodeParent(boundaryEl) && isNodeVisible(boundaryEl)) {
+//             if (candidateEl === currentMouseOverBoundary) {
 
-        for (const childNode of boundaryEl.childNodes) {
+//                 candidateEl.dataset.boundarySelected = true;
 
-            if (childNode.nodeType === 3 && childNode.textContent.trim().length && isNodeParent(childNode)) {
+//             } else {
 
-                boundaryEl.dataset.textNode = true;
+//                 candidateEl.dataset.boundarySelected = false;
 
-                textNodes.push(boundaryEl);
+//             }
 
-            }
+//         });
 
-            if (childNode.nodeType === 1 && isNodeParent(childNode) && isNodeVisible(childNode)) {
+//     }
 
-                if (isElementTextNode(childNode)) {
+// }
 
-                    boundaryEl.dataset.textNode = true;
 
-                    textNodes.push(boundaryEl);
+function getTextNodes(node, textNodes = []) {
 
-                } else {
-
-                    getTextNodes(childNode, textNodes);
-
-                }
-
-            }
-
-        }
-
-    }
-
-    return textNodes;
-}
-
-function newGetTextNodes(node, textNodes = []) {
-
-    if (isNodeVisible(node) && isParentNode(node)) {
+    if (isVisibleNode(node) && hasValidChildNodes(node)) {
 
         const childNodeSummary = getChildNodeSummary(node);
-
-
-        if (childNodeSummary.textNodes.length && !childNodeSummary.elementNodes.length) {
-
-            node.dataset.textNode = true;
-
-            if (isInline(node)) {
-
-                const singleParentNode = getSingleParentNode(node);
-
-                singleParentNode.dataset.textParentNode = true;
-            }
-
-        }
 
         childNodeSummary.textNodes.forEach(textNodeIndex => {
             textNodes.push(node.childNodes[textNodeIndex]);
         });
 
         childNodeSummary.elementNodes.forEach(elementNodeIndex => {
-            newGetTextNodes(node.childNodes[elementNodeIndex], textNodes);
+            getTextNodes(node.childNodes[elementNodeIndex], textNodes);
         });
 
     }
@@ -205,21 +119,20 @@ function newGetTextNodes(node, textNodes = []) {
 
 }
 
-function getSingleParentNode(node) {
+function getBlockParentNode(node) { // NEEEEEDS WORK
 
-    // NEEDS TO BE NEXT SINGLE BLOCK PARENT - HAS TO SKIP INLINE TILL IT FINDS A BLOCK
-
-    if (getChildNodeSummary(node.parentNode).total > 1 && !isInline(node.parentNode)) {
-
-        getSingleParentNode(node.parentNode);
-
+    if (isInlineNode(node.parentNode) || getChildNodeSummary(node.parentNode).total <= 1) {
+        console.log('invalid', node, node.parentNode);
+        getBlockParentNode(node.parentNode);
     }
+
+    console.log('valid', node.parentNode);
 
     return node.parentNode;
 
 }
 
-function isInline(node) {
+function isInlineNode(node) {
 
     const inlineProps = [
         "inline",
@@ -228,50 +141,64 @@ function isInline(node) {
         "inline-grid"
     ]
 
-    if (inlineProps.includes(window.getComputedStyle(node).display)) return true;
+    if (!inlineProps.includes(window.getComputedStyle(node).display)) return false;
 
-    return false;
+    return true;
 }
 
 function getChildNodeSummary(node) {
 
     const summary = {
         elementNodes: [],
-        textNodes: []
+        textNodes: [],
+        total: 0
     };
 
     let i = 0;
 
     for (const childNode of node.childNodes) {
 
-        if (childNode.nodeType === 1 && isValidElementNode(childNode)) summary.elementNodes.push(i);
+        if (isValidElementNode(childNode)) {
 
-        if (childNode.nodeType === 3 && isValidTextNode(childNode)) summary.textNodes.push(i);
+            summary.elementNodes.push(i);
+
+            summary.total++;
+
+        } else if (isValidTextNode(childNode)) {
+
+            summary.textNodes.push(i);
+
+            summary.total++;
+
+        }
 
         i++;
 
     }
-
-    summary.total = summary.elementNodes.length + summary.textNodes.length;
 
     return summary;
 }
 
 function isValidElementNode(node) {
 
-    if (!isNodeVisible(node)) return false;
+    if (node.nodeType !== 1) return false;
+
+    if (!isVisibleNode(node)) return false;
 
     return true;
 
 }
 
 function isValidTextNode(node) {
-    if (node.textContent.trim().length) return true;
 
-    return false;
+    if (node.nodeType !== 3) return false;
+
+    if (!node.textContent.trim().length) return false;
+
+    return true;
 }
 
-function isParentNode(node) { // all we want to know is if this node has real children
+function hasValidChildNodes(node) { // all we want to know is if this node has real children
 
     // does it have child nodes
     if (!node.childNodes.length) return false;
@@ -279,9 +206,7 @@ function isParentNode(node) { // all we want to know is if this node has real ch
     // it has child nodes but we check if they are valid
     for (const childNode of node.childNodes) {
 
-        if (childNode.nodeType === 1 && isValidElementNode(childNode)) return true;
-
-        if (childNode.nodeType === 3 && isValidTextNode(childNode)) return true;
+        if (isValidElementNode(childNode) || isValidTextNode(childNode)) return true;
 
     }
 
@@ -290,30 +215,7 @@ function isParentNode(node) { // all we want to know is if this node has real ch
 
 }
 
-
-function isNodeParent(node) {
-    if (!node.childNodes.length) {
-        return false;
-    }
-
-    return true
-}
-
-function isElementTextNode(node) {
-
-    if (!INLINE_TEXT_ELEMENTS.includes(node.nodeName)) {
-        return false;
-    }
-
-    if (window.getComputedStyle(node).display !== 'inline') {
-        return false;
-    }
-
-    return true;
-
-}
-
-function isNodeVisible(node) {
+function isVisibleNode(node) {
 
     if (node.hidden) return false;
 
@@ -334,7 +236,6 @@ function isNodeVisible(node) {
     return true;
 
 }
-
 
 function getBoundaryNodes(textNodes) {
 
@@ -366,7 +267,7 @@ function getBoundaryNodes(textNodes) {
 }
 
 
-const textNodes = newGetTextNodes(document.body);
+const textNodes = getTextNodes(document.body);
 console.log(textNodes);
 
 // const textNodes = getTextNodes(document.body);
